@@ -114,3 +114,30 @@ function sendEmail(event) {
           responseMessage.style.display = "block";
       });
 }
+function mailingList(event) {
+  event.preventDefault();
+
+  let form = document.getElementById("mailingList"); // Form ID here should match HTML
+  let button = form.querySelector("button"); // Get the button inside the form
+  
+
+  let templateParams = {
+      email: document.getElementById("mailing-list-email").value,
+  };
+
+  emailjs.send("service_gj83vl5", "template_n8j33kz", templateParams)
+      .then(response => {
+          // Change button text to "Success!" and disable it
+          button.textContent = "Success!";
+          button.disabled = true;
+
+          // Optional: clear the input field
+          document.getElementById("mailing-list-email").value = "";
+      })
+      .catch(error => {
+          if (responseMessage) {
+            responseMessage.innerHTML = "<p style='color: red;'>Error sending email. Please try again.</p>";
+            responseMessage.style.display = "block";
+          }
+      });
+}
