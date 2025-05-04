@@ -1,674 +1,743 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Looking for live acoustic music across New Hampshire, Maine, and Massachusetts? Gus & Jean is a professional acoustic duo perfect for receptions, parties, and events." />
+    <title>Live Acoustic Music in New Hampshire - Gus & Jean</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BHBH3H3BK7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-BHBH3H3BK7');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "[Your Duo Name]",
+    "description": "Live acoustic music duo available for weddings, events, and restaurants in New Hampshire.",
+    "url": "https://yourwebsite.com",
+    "sameAs": ["https://www.instagram.com/yourduo", "https://www.facebook.com/yourduo"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Manchester",
+      "addressRegion": "NH",
+      "addressCountry": "US"
+    }
+  }
+  </script>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gus and Jean - Acoustic Duo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-</head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BHBH3H3BK7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BHBH3H3BK7');
-</script>
-
-<body>
-  <div id="header">
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark mt-auto" style="background-color: #065B7A">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="font-family: Shrikhand; font-size: 2.25rem; padding: 0px; margin: 0px;">
-         G&J
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          
+  <body>
+    <section id="header">
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark mt-auto">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">G&J</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <ul class="navbar-nav ms-auto mb-2 px-3 mb-lg-0">
               <li class="nav-item">
-                <button id="top-tab" class="nav-link hover-overlay">Home
-                </button>
+                <button id="top-tab" class="nav-link hover-overlay">Home</button>
               </li>  
               <li class="nav-item">
-                <button id="about-tab" class="nav-link">About
-                </button>
+                <button id="about-tab" class="nav-link">About</button>
               </li>
               <li class="nav-item" >
-                <button id="calendar-tab" class="nav-link" >Schedule
-                </button>
+                <button id="calendar-tab" class="nav-link" >Schedule</button>
               </li>
               <li class="nav-item" >
-                <button id="media-tab" class="nav-link">Media
-                </button>
+                <button id="media-tab" class="nav-link">Media</button>
               </li>
               <li class="nav-item">
-                
-                <a href="https://docs.google.com/document/d/e/2PACX-1vRm4shPfEUU3QaVFBTG6TmQa9rAMCBNjAygbOPQWJM2JAji0IR_7bHgqR_CZmLwZpFfT-GflakoXdAU/pub" 
-                target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                <a href="https://docs.google.com/document/d/e/2PACX-1vRm4shPfEUU3QaVFBTG6TmQa9rAMCBNjAygbOPQWJM2JAji0IR_7bHgqR_CZmLwZpFfT-GflakoXdAU/pub" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
                   <button class="nav-link">EPK</button>
                 </a>
-                
               </li>
               <li class="nav-item">
-                <button id="contact-tab" class="nav-link">Booking/Contact
-                </button>
+                <button id="contact-tab" class="nav-link">Booking/Contact</button>
               </li>
             </ul>
-          
+          </div>
+        </div>
+      </nav>
+    </section> 
+    
+    <section id="about-section"> 
+      <div id="top" class="text-center">
+        <img id="hero-image" src="images/hero-crop.jpg" class="mx-auto" alt="Acoustic duo performing live music across New Hampshire">
+      </div>
+      <div id="about" class="card mx-auto" >
+        <div class="card-body">
+          <h1 id="about-gusandjean" class="text-center">Gus & Jean</h1>
+          <h5 id="about-acoustic-duo" class="text-center"><em>Acoustic Duo</em></h5>
+          <p class="card-text about-text">
+            Performing together for over 25 years, Gus & Jean are a <b>husband-and-wife</b> duo based in 
+            <b>Southern NH/ME</b> known for their creative interpretations, seamless harmonies, and 
+            undeniable chemistry. From classic hits to contemporary favorites, their wide-ranging 
+            setlist spans <b>James Taylor</b> to <b>Whitney Houston</b> to <b>Ed Sheeran</b>, connecting with listeners 
+            of all ages.
+          </p>
+          <p class="card-text about-text">
+            Their dynamic sound has earned them a growing social media following with over <b>23K 
+            views</b> and the attention of industry figures, including the NH Music Collective,
+          Boston’s Mix 104.1 radio host Kennedy of Karson and Kennedy, and <b>Grammy-winning 
+          artist Lisa Loeb</b>. 
+          </p>
+          <p class="card-text about-text">
+            Last year marked their breakout year. In the summer of 2024, they were a 
+            <b>featured artist</b> for Play Music on the Porch Day, an annual world-wide event. 
+            They also recorded their debut EP of acoustic covers, <b>Live at The Studio 
+            Portland in Portland, Maine</b>. That fall, they showcased their original music, 
+            placing second in the preliminary rounds of the <b>NH Music Collective's 2024 Singer-Songwriter Contest</b>.
+          </p>
+          <p class="card-text about-text">
+          Whether captivating large crowds on the <b>92.5 The River</b> stage at the 
+          Manchester Citywide Arts Festival or creating intimate vibes at venues 
+          like <b>The Shaskeen</b> in Manchester, NH and <b>Patrick's Pub</b> in Gilford, NH, 
+          Gus & Jean deliver performances that leave audiences singing long after the last note.
+          </p>
+          <a href="https://www.instagram.com/gusandjeanmusic/" target="_blank">
+            <div class="text-center">
+              <img id="about-logo" src="images/logo-large.png" alt="G&J logo" class="mx-auto" alt="Acoustic duo performing live music across New Hampshire">
+            </div>  
+          </a>      
+          <div class="text-center">     
+            <button id="about-book-button" class="btn btn-outline-dark btn-lg">Book us!</button>
+          </div>
         </div>
       </div>
-    </nav>
-  </div> 
+    </section>
   
- 
-  <div id="about-section" > 
-    <div id="top" class="text-center">
-      <img src="hero-crop.jpg" class="mx-auto" style="border-radius: 5px; width: 80%; max-width: 700px; height: auto; margin-top: 100px;">
-<!--
-      <video muted autoplay loop playsinline src="banner-video.mp4" alt="Gus and Jean playing and singing" type="video/mp4" class="mx-auto" style="border-radius: 5px; margin-right: -150px; width: 100%; max-width: 800px; height: auto; margin-top: 70px; border: solid; border-width: 10px ;border-color: white;">
-      </video>
--->
-    </div>
-    
-    
-    <div id="about" class="card mx-auto" >
-      <div class="card-body">
-        <h1 class=" text-center" style="font-family: Shrikhand; font-size: 3.4rem; margin-bottom: 0; padding-bottom: 0">Gus & Jean</h1>
-        <h5 class="text-center" style="padding: 0 0 20px 0; margin-top: 0"><em>Acoustic Duo</em></h5>
-        <p class="card-text" style="text-align: justify;">
-          Performing together for over 25 years, Gus & Jean are a <b>husband-and-wife</b> duo based in 
-          <b>Southern NH/ME</b> known for their creative interpretations, seamless harmonies, and 
-          undeniable chemistry. From classic hits to contemporary favorites, their wide-ranging 
-          setlist spans <b>James Taylor</b> to <b>Whitney Houston</b> to <b>Ed Sheeran</b>, connecting with listeners 
-          of all ages.
-        </p>
-        <p class="card-text" style="text-align: justify;">
-          Their dynamic sound has earned them a growing social media following with over <b>23K 
-          views</b> and the attention of industry figures, including the <b>NH Music Collective</b>,
-        <b>Boston’s Mix 104.1</b> radio host <b>Kennedy</b> of Karson and Kennedy, and <b>Grammy-winning 
-        artist Lisa Loeb</b>. 
-        </p>
-        <p class="card-text" style="text-align: justify;">
-          Last year marked their <b>breakout year</b>. In the summer of 2024, they were a 
-          featured artist for <b>Play Music on the Porch Day</b>, an annual world-wide event. 
-          They also recorded their debut <b>EP</b> of acoustic covers, <b>Live at The Studio 
-          Portland in Portland, Maine</b>. That fall, they showcased their original music, 
-          placing second in the preliminary rounds of the <b>NH Music Collective's 2024 Singer-Songwriter Contest</b>.
-        </p>
-        <p class="card-text" style="text-align: justify;">
-        Whether captivating large crowds on the <b>92.5 The River</b> stage at the 
-        <b>Manchester Citywide Arts Festival</b> or creating intimate vibes at venues 
-        like <b>The Shaskeen</b> in Manchester, NH and <b>Patrick's Pub</b> in Gilford, NH, 
-        Gus & Jean deliver performances that leave audiences singing long after the last note.
-        </p>
-        
-      <a href="https://www.instagram.com/gusandjeanmusic/" target="_blank">
-        <div class="text-center" style="padding-top: 20px;">
-          <img src="logo-large.png" alt="G&J logo" class="mx-auto" style=" width: 150px; height: auto;">
-        </div>  
-      </a>      
-
-      <div class="text-center">
-              
-        <button id="booking-button-1" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 40px">
-          Book us!
-        </button>
-         
-    </div>
-<!--
-        <div class="text-center">
-          <a href="https://instagram.com/gusandjeanmusic" style="text-decoration: none;" target="_blank">
-            <div style="padding: 20px 0 10px 0 ;">
-              <img src="insta-logo.svg" alt="instagram logo" style="width: 50px; height: auto;">
+    <section id="calendar-section">    
+      <div id="calendar" class="card mx-auto">
+        <div class="calendar-card-body">
+          <h1 id="calendar-title" class="text-center">2025 Schedule</h1>
+          <h5 class="card-subtitle mx-2 text-muted month-text">May:</h5>
+          <hr>
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">SAT</p>
+              <h1 class="card-text">10</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="http://www.keenefarmersmarket.com" target="_blank">
+              <p class="card-text"><b>Farmers' Market of Keene</b></a>
+                <br>Keene, NH</p>
+              <p class="card-text"><em>9:00-1:00am</em></p>
             </div>
-            <p style="color: black; font-size: 1.2rem;">@gusandjeanmusic</p>
-            <div>
-              <button class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px;">
-                View profile
-              </button>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/keene-market.png" alt="Acoustic duo performing live music in Keene, NH">
             </div>
-          </a> 
-        </div>
--->
-      </div>
-    </div>
-  </div>
-  <div id="calendar-section">    
-    <div id="calendar" class="card mx-auto">
-      <div class="calendar-card-body">
-        <h1 class="text-center" style="font-size: 2.4rem">2025 Schedule</h1>
+          </div>
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">SAT</p>
+              <h1 class="card-text">10</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <p class="card-text"><b>Private Party</b>
+                <br>NH</p>
+              <p class="card-text"><em></em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/private-party.png" alt="Acoustic duo performing live music at parties and receptions in NH">
+            </div>
+          </div>
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">TUES</p>
+              <h1 class="card-text">27</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://www.shaskeenirishpub.com/" target="_blank" >
+              <p class="card-text"><b>The Shaskeen Pub</b></a>
+                <br>Manchester, NH</p>
+              <p class="card-text"><em>8:00-11:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/shaskeen-4.png" alt="Acoustic duo performing live music at the Shaskeen in Manchester, NH">
+            </div>
+          </div>
+          <h5 class="card-subtitle mx-2 text-muted month-text">June:</h5>
+          <hr>
+          <div class="d-flex" >
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">SUN</p>
+              <h1 class="card-text">1</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://kitterycommunitymarket.com" target="_blank" >
+              <p class="card-text"><b>Kittery Community Market</b></a>
+                <br>Kittery, ME</p>
+              <p class="card-text"><em>10:00-1:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/kittery-market.png" alt="Acoustic duo performing live music in Kittery, Maine">
+            </div>
+          </div>
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">THU</p>
+              <h1 class="card-text">5</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://www.featheredfriendbrewing.com/" target="_blank" >
+              <p class="card-text"><b>Feathered Friend Brewing</b></a>
+                <br>Concord, NH</p>
+              <p class="card-text"><em>6:00-9:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/feathered-friend.png" alt="Acoustic duo performing live music in Concord, New Hampshire">
+            </div>
+          </div>
         
-
-        
-        <h5 class="card-subtitle mx-2 text-muted " style="padding-top: 20px;">March:</h5>
-        <hr>
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px;">
-          <div class="d-flex flex-column" style="width:30%; text-align: center; ">
-            <p class="card-text" style="margin-bottom: 0;">FRI</p>
-            <h1 class="card-text">7</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://www.thelazylionrestaurant.com" style="color: black;" target="_blank" >
-            <p class="card-text"><b>The Lazy Lion</b></a>
-              <br>Deerfield, NH</p>
-            <p class="card-text"><em>5:00-8:00pm</em></p>
+  
+          <h5 class="card-subtitle mx-2 text-muted month-text">August:</h5>
+          <hr>
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">FRI</p>
+              <h1 class="card-text">1</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://starkbrewingcompany.com/manchester-stark-brewing-company-events" target="_blank">
+              <p class="card-text"><b>Stark Brewing Co.</b></a>
+                <br>Manchester, NH</p>
+              <p class="card-text"><em>6:30-9:30pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/stark.png" alt="Acoustic duo performing live music in Manchester, New Hampshire">
+            </div>
           </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm"  src="lazy-lion.png">
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">SUN</p>
+              <h1 class="card-text">24</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://www.averillhousevineyard.com" target="_blank">
+              <p class="card-text"><b>Averill House Vineyard</b></a>
+                <br>Brookline, NH</p>
+              <p class="card-text"><em>1:30-3:30pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/averill-house.png" alt="Acoustic duo performing live music at wineries in Brookline, NH">
+            </div>
           </div>
-        </div>
-        <hr style="margin-left: 5%; width: 90%;">
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px; ">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">FRI</p>
-            <h1 class="card-text">21</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://elevatedeatsnh.com" style="color: black;" target="_blank" >
-            <p class="card-text"><b>Elevated Eats at The Greenery</b></a>
-              <br>Milton, NH</p>
-            <p class="card-text"><em>6:00-8:00pm</em></p>
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">THU</p>
+              <h1 class="card-text">28</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://www.jacquesflowers.com/page/mast-road-community-market" target="_blank" >
+              <p class="card-text"><b>Mast Rd Community Market</b></a>
+                <br>Goffstown, NH</p>
+              <p class="card-text"><em>3:30-6:30pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/mast-road.png" alt="Acoustic duo performing live music farmers markets across NH">
+            </div>
           </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm"  src="elevated-eats.png">
+  
+  
+          <h5 class="card-subtitle mx-2 text-muted month-text">September:</h5>
+          <hr>
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">FRI</p>
+              <h1 class="card-text">26</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="http://www.sunapeecoffeehouse.org" target="_blank" >
+              <p class="card-text"><b>Sunapee Community Coffeehouse</b></a>
+                <br>Sunapee, NH</p>
+              <p class="card-text"><em>7:00-9:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/sunapee-cc.png" alt="Acoustic duo performing live music in Sunapee, NH">
+            </div>
           </div>
-        </div>
-        <hr style="margin-left: 5%; width: 90%;">
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px; ">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">SAT</p>
-            <h1 class="card-text">22</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://hareofthedawgnh.com" style="color: black;" target="_blank" >
-            <p class="card-text"><b>Hare of the Dawg</b></a>
-              <br>Derry, NH</p>
-            <p class="card-text"><em>7:00-10:00pm</em></p>
+  
+  
+          <h5 class="card-subtitle mx-2 text-muted month-text">October:</h5>
+          <hr>
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">SUN</p>
+              <h1 class="card-text">5</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://www.averillhousevineyard.com" target="_blank" >
+              <p class="card-text"><b>Averill House Vineyard</b></a>
+                <br>Brookline, NH</p>
+              <p class="card-text"><em>1:30-3:30pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/averill-house.png" alt="Acoustic duo performing live music at wineries across NH">
+            </div>
           </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="hare-of-the-dawg.png">
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">FRI</p>
+              <h1 class="card-text">31</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://www.thelazylionrestaurant.com" target="_blank" >
+              <p class="card-text"><b>The Lazy Lion</b></a>
+                <br>Deerfield, NH</p>
+              <p class="card-text"><em>5:00-8:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/lazy-lion.png" alt="Acoustic duo performing live music in Deerfield, NH">
+            </div>
           </div>
-        </div> 
-        <hr style="margin-left: 5%; width: 90%;">
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px;">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">FRI</p>
-            <h1 class="card-text">28</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://starkbrewingcompany.com/manchester-stark-brewing-company-events" style="color: black;" target="_blank" >
-            <p class="card-text"><b>Stark Brewing Company</b></a>
-              <br>Manchester, NH</p>
-            <p class="card-text"><em>6:30-9:30pm</em></p>
+  
+  
+          <h5 class="card-subtitle mx-2 text-muted month-text">November:</h5>
+          <hr>
+          <div class="d-flex" >
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">SUN</p>
+              <h1 class="card-text">2</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://kitterycommunitymarket.com" target="_blank" >
+              <p class="card-text"><b>Kittery Community Market</b></a>
+                <br>Kittery, ME</p>
+              <p class="card-text"><em>10:00-1:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/kittery-market.png" alt="Acoustic duo performing live music at farmers' markets across New Hampshire">
+            </div>
           </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="stark.png">
-          </div>
-        </div> 
-        <hr style="margin-left: 5%; width: 90%;">
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px;">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">SUN</p>
-            <h1 class="card-text">30</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
+  
+  
+          <h5 class="card-subtitle mx-2 text-muted month-text">December:</h5>
+          <hr>
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">FRI</p>
+              <h1 class="card-text">26</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://www.thelazylionrestaurant.com" target="_blank" >
+              <p class="card-text"><b>The Lazy Lion</b></a>
+                <br>Deerfield, NH</p>
+              <p class="card-text"><em>5:00-8:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/lazy-lion.png" alt="Acoustic duo performing live music across New Hampshire">
+            </div>
             
-            <p class="card-text"><b>Stonecuttters Pub</b></a>
-              <br>Milford, NH</p>
-            <p class="card-text"><em>4:00-7:00pm</em></p>
           </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="stonecutters-pub.png">
-          </div>
-        </div> 
-        <h5 class="card-subtitle mx-2 text-muted " style="padding-top: 20px;">May:</h5>
-        <hr>
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px;">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">TUES</p>
-            <h1 class="card-text">27</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://www.shaskeenirishpub.com/" style="color: black;" target="_blank" >
-            <p class="card-text"><b>The Shaskeen Pub</b></a>
-              <br>Manchester, NH</p>
-            <p class="card-text"><em>8:00-11:00pm</em></p>
-          </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="shaskeen-4.png">
-          </div>
-        </div>
-        <h5 class="card-subtitle mx-2 text-muted " style="padding-top: 20px;">June:</h5>
-        <hr>
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px; ">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">SUN</p>
-            <h1 class="card-text">1</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://kitterycommunitymarket.com" style="color: black;" target="_blank" >
-            <p class="card-text"><b>Kittery Community Market</b></a>
-              <br>Kittery, ME</p>
-            <p class="card-text"><em>10:00-1:00pm</em></p>
-          </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="kittery-market.png">
-          </div>
-        </div>
-        <h5 class="card-subtitle mx-2 text-muted " style="padding-top: 20px;">August:</h5>
-        <hr>
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px; ">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">SUN</p>
-            <h1 class="card-text">24</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://www.averillhousevineyard.com" style="color: black;" target="_blank" >
-            <p class="card-text"><b>Averill House Vineyard</b></a>
-              <br>Brookline, NH</p>
-            <p class="card-text"><em>1:30-3:30pm</em></p>
-          </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="averill-house.png">
-          </div>
-        </div>
-        <hr style="margin-left: 5%; width: 90%;">
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px;">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">THU</p>
-            <h1 class="card-text">28</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://www.jacquesflowers.com/page/mast-road-community-market" style="color: black;" target="_blank" >
-            <p class="card-text"><b>Mast Rd Community Market</b></a>
-              <br>Goffstown, NH</p>
-            <p class="card-text"><em>3:30-6:30pm</em></p>
-          </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="mast-road.png">
-          </div>
-        </div>
-        <h5 class="card-subtitle mx-2 text-muted " style="padding-top: 20px;">October:</h5>
-        <hr>
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px;">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">SUN</p>
-            <h1 class="card-text">5</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://www.averillhousevineyard.com" style="color: black;" target="_blank" >
-            <p class="card-text"><b>Averill House Vineyard</b></a>
-              <br>Brookline, NH</p>
-            <p class="card-text"><em>1:30-3:30pm</em></p>
-          </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="averill-house.png">
-          </div>
-        </div>
-         <hr style="margin-left: 5%; width: 90%;">
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px;">
-          <div class="d-flex flex-column" style="width:30%; text-align: center; ">
-            <p class="card-text" style="margin-bottom: 0;">FRI</p>
-            <h1 class="card-text">31</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://www.thelazylionrestaurant.com" style="color: black;" target="_blank" >
-            <p class="card-text"><b>The Lazy Lion</b></a>
-              <br>Deerfield, NH</p>
-            <p class="card-text"><em>5:00-8:00pm</em></p>
-          </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm"  src="lazy-lion.png">
-          </div>
-        </div>
-        <h5 class="card-subtitle mx-2 text-muted " style="padding-top: 20px;">November:</h5>
-        <hr>
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px;">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">SUN</p>
-            <h1 class="card-text">2</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://kitterycommunitymarket.com" style="color: black;" target="_blank" >
-            <p class="card-text"><b>Kittery Community Market</b></a>
-              <br>Kittery, ME</p>
-            <p class="card-text"><em>10:00-1:00pm</em></p>
-          </div>
+  
+          <!-- Toggle Button -->
+          <button id="togglePastEvents" class="btn btn-outline-dark btn-sm" style="display: block; margin: 0 auto; margin-top: 20px;">
+            Past Events &#x25BE;
+          </button>
+  
+          <!-- Past Events Section (initially hidden) -->
+          <div id="past-events" style="display: none;">
+            <h2 class="card-title text-center" style="padding-top: 40px; font-size: 22px;"> Past Events </h2>
           
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="kittery-market.png">
+  
+          <h5 class="card-subtitle mx-2 text-muted month-text">January:</h5>
+          <hr>
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">FRI</p>
+              <h1 class="card-text">10</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://www.featheredfriendbrewing.com/" target="_blank" >
+              <p class="card-text"><b>Feathered Friend Brewing</b></a>
+                <br>Concord, NH</p>
+              <p class="card-text"><em>6:00-9:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/feathered-friend.png" alt="Acoustic duo performing live music at brewery in Concord, New Hampshire">
+            </div>
           </div>
-          
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">FRI</p>
+              <h1 class="card-text">24</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://www.thelazylionrestaurant.com" target="_blank" >
+              <p class="card-text"><b>The Lazy Lion</b></a>
+                <br>Deerfield, NH</p>
+              <p class="card-text"><em>5:00-8:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/lazy-lion.png" alt="Acoustic duo performing live music at restuarant in Deerfield, NH">
+            </div>
+          </div> 
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">SUN</p>
+              <h1 class="card-text">26</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <p class="card-text"><b>Stonecuttters Pub</b></a>
+                <br>Milford, NH</p>
+              <p class="card-text"><em>4:00-7:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/stonecutters-pub.png" alt="Acoustic duo performing live music at pub in Milford, NH">
+            </div>
+          </div> 
+  
+  
+          <h5 class="card-subtitle mx-2 text-muted month-text">February:</h5>
+          <hr>
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">FRI</p>
+              <h1 class="card-text">7</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://luksbarandgrill.com" target="_blank" >
+              <p class="card-text"><b>Luk's Bar and Grill</b></a>
+                <br>Hudson, NH</p>
+              <p class="card-text"><em>7:00-10:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/luks.png" alt="Acoustic duo performing live music at restuarant in Hudson, NH">
+            </div>
+          </div> 
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">TUE</p>
+              <h1 class="card-text">11</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://www.shaskeenirishpub.com/" target="_blank" >
+              <p class="card-text"><b>The Shaskeen Pub</b></a>
+                <br>Manchester, NH</p>
+              <p class="card-text"><em>8:00-11:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/shaskeen-4.png" alt="Acoustic duo performing live music at Shaskeen Pub in Manchester, NH">
+            </div>
+          </div> 
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text">FRI</p>
+              <h1 class="card-text">14</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://www.thelazylionrestaurant.com" target="_blank" >
+              <p class="card-text"><b>The Lazy Lion</b></a>
+                <br>Deerfield, NH</p>
+              <p class="card-text"><em>5:00-8:00pm</em></p>
+            </div>
+            <div style="border-radius: 10px; width: 40%;">
+              <img class="venue-logo shadow-sm" src="images/lazy-lion.png" alt="Acoustic duo performing live music at restuarants in southern NH">
+            </div>
+          </div> 
+  
+  
+          <h5 class="card-subtitle mx-2 text-muted month-text">March:</h5>
+          <hr>
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">FRI</p>
+              <h1 class="card-text">7</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://www.thelazylionrestaurant.com" target="_blank" >
+              <p class="card-text"><b>The Lazy Lion</b></a>
+                <br>Deerfield, NH</p>
+              <p class="card-text"><em>5:00-8:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm"  src="images/lazy-lion.png" alt="Acoustic duo performing live music at restuarants in New Hampshire">
+            </div>
+          </div>
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">FRI</p>
+              <h1 class="card-text">21</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://elevatedeatsnh.com" target="_blank" >
+              <p class="card-text"><b>Elevated Eats at The Greenery</b></a>
+                <br>Milton, NH</p>
+              <p class="card-text"><em>6:00-8:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm"  src="images/elevated-eats.png" alt="Acoustic duo performing live music at your next private event">
+            </div>
+          </div>
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">SAT</p>
+              <h1 class="card-text">22</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://hareofthedawgnh.com" target="_blank" >
+              <p class="card-text"><b>Hare of the Dawg</b></a>
+                <br>Derry, NH</p>
+              <p class="card-text"><em>7:00-10:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/hare-of-the-dawg.png" alt="Acoustic duo performing live music at bar in Derry, NH">
+            </div>
+          </div> 
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">FRI</p>
+              <h1 class="card-text">28</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <a class="venue-link" href="https://starkbrewingcompany.com/manchester-stark-brewing-company-events" target="_blank" >
+              <p class="card-text"><b>Stark Brewing Company</b></a>
+                <br>Manchester, NH</p>
+              <p class="card-text"><em>6:30-9:30pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/stark.png" alt="Acoustic duo performing live at brewery in downtown Manchester, NH">
+            </div>
+          </div> 
+          <hr class="events-divider">
+          <div class="d-flex">
+            <div class="d-flex flex-column date-container">
+              <p class="card-text day-of-the-week">SUN</p>
+              <h1 class="card-text">30</h1>
+            </div>  
+            <div class="d-flex flex-column mx-2 event-description">
+              <p class="card-text"><b>Stonecuttters Pub</b></a>
+                <br>Milford, NH</p>
+              <p class="card-text"><em>4:00-7:00pm</em></p>
+            </div>
+            <div class="venue-logo-container">
+              <img class="venue-logo shadow-sm" src="images/stonecutters-pub.png" alt="Acoustic duo performing live music in Milford, NH">
+            </div>
+          </div>
         </div>
-        <h5 class="card-subtitle mx-2 text-muted " style="padding-top: 20px;">December:</h5>
-        <hr>
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px;">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">FRI</p>
-            <h1 class="card-text">26</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://www.thelazylionrestaurant.com" style="color: black;" target="_blank" >
-            <p class="card-text"><b>The Lazy Lion</b></a>
-              <br>Deerfield, NH</p>
-            <p class="card-text"><em>5:00-8:00pm</em></p>
-          </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm"  src="lazy-lion.png">
-          </div>
-          
-        </div>
-
-        <!-- Toggle Button -->
-        <button id="togglePastEvents" class="btn btn-outline-dark btn-sm" style="display: block; margin: 0 auto; margin-top: 20px;">
-          Past Events &#x25BE;
-        </button>
-
-        <!-- Past Events Section (initially hidden) -->
-        <div id="past-events" style="display: none;">
-          <h2 class="card-title text-center" style="padding-top: 40px; font-size: 22px;"> Past Events </h2>
-        
- 
-
-        
-
-        <h5 class="card-subtitle mx-2 text-muted " style="padding-top: 20px;">January:</h5>
-        <hr>
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px;">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">FRI</p>
-            <h1 class="card-text">10</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://www.featheredfriendbrewing.com/" style="color: black;" target="_blank" >
-            <p class="card-text"><b>Feathered Friend Brewing</b></a>
-              <br>Concord, NH</p>
-            <p class="card-text"><em>6:00-9:00pm</em></p>
-          </div>
-          
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="feathered-friend.png">
-          </div>
-        
-        </div>
-        <hr style="margin-left: 5%; width: 90%;">
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px;">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">FRI</p>
-            <h1 class="card-text">24</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://www.thelazylionrestaurant.com" style="color: black;" target="_blank" >
-            <p class="card-text"><b>The Lazy Lion</b></a>
-              <br>Deerfield, NH</p>
-            <p class="card-text"><em>5:00-8:00pm</em></p>
-          </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="lazy-lion.png">
-          </div>
-        </div> 
-        <hr style="margin-left: 5%; width: 90%;">
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px; ">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">SUN</p>
-            <h1 class="card-text">26</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            
-            <p class="card-text"><b>Stonecuttters Pub</b></a>
-              <br>Milford, NH</p>
-            <p class="card-text"><em>4:00-7:00pm</em></p>
-          </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="stonecutters-pub.png">
-          </div>
-        </div> 
-        <h5 class="card-subtitle mx-2 text-muted " style="padding-top: 20px;">February:</h5>
-        <hr>
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px;">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">FRI</p>
-            <h1 class="card-text">7</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://luksbarandgrill.com" style="color: black;" target="_blank" >
-            <p class="card-text"><b>Luk's Bar and Grill</b></a>
-              <br>Hudson, NH</p>
-            <p class="card-text"><em>7:00-10:00pm</em></p>
-          </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="luks.png">
-          </div>
-        </div> 
-        <hr style="margin-left: 5%; width: 90%;">
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px;">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">TUE</p>
-            <h1 class="card-text">11</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://www.shaskeenirishpub.com/" style="color: black;" target="_blank" >
-            <p class="card-text"><b>The Shaskeen Pub</b></a>
-              <br>Manchester, NH</p>
-            <p class="card-text"><em>8:00-11:00pm</em></p>
-          </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="shaskeen-4.png">
-          </div>
-        </div> 
-        <hr style="margin-left: 5%; width: 90%;">
-        <div class="d-flex" style="padding: 10px 10px 10px 10px; margin: 10px 0px 10px 0px; ">
-          <div class="d-flex flex-column" style="width:30%; text-align: center;">
-            <p class="card-text" style="margin-bottom: 0;">FRI</p>
-            <h1 class="card-text">14</h1>
-          </div>  
-          <div class="d-flex flex-column mx-2" style="width: 80%;">
-            <a href="https://www.thelazylionrestaurant.com" style="color: black;" target="_blank" >
-            <p class="card-text"><b>The Lazy Lion</b></a>
-              <br>Deerfield, NH</p>
-            <p class="card-text"><em>5:00-8:00pm</em></p>
-          </div>
-          <div style="border-radius: 10px; width: 40%;">
-            <img class="venue-logo shadow-sm" src="lazy-lion.png">
-          </div>
-        </div> 
-      </div>
         <div class="text-center">
           <button id="booking-button-2" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 60px">
             Book us!
           </button> 
         </div>
-        
       </div>
-    </div>
-  </div>
+    </section>
+    
   
-
-  <div id="media-section">
-    <div id="media" class="card mx-auto">
-      <div class="card-body text-center">
-        <h1 class="card-title mx-auto" style="font-size: 2.4rem">Videos</h1>
-        <p class="card-text">Recorded in front of a live audience at 
-          <a href="https://thestudioportland.com/" style="color: black;">The Studio Portland</a>
-        </p>
+    <div id="media-section">
+      <div id="media" class="card mx-auto">
+        <div class="card-body text-center">
+          <h1 class="card-title mx-auto" style="font-size: 2.4rem">Videos</h1>
+          <p class="card-text">Recorded in front of a live audience at 
+            <a href="https://thestudioportland.com/" style="color: black;">The Studio Portland</a>
+          </p>
+          
+          <iframe class="youtube-video" src="https://www.youtube.com/embed/GPqa20-6wXA?si=tFOUO0-UAZKRFAx8" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+          <iframe style="padding-top: 20px;" class="youtube-video" 
+          src="https://www.youtube.com/embed/PSzMe6NrSyA?si=MJaCFaY0npu7WQAp" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; c
+          lipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+          <a href="https://www.instagram.com/gusandjeanmusic/reels/" target="_blank" class="btn btn-outline-dark btn-lg mx-auto" style="width: 200px; border-radius: 5px; margin-top: 40px">More videos</a>
+          
+  
+          <!--        
+  
+  
+          <p class="card-text text-muted" style="padding-top: 10px;">"The Bones" - Maren Morris</p>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C9u1R-kRF59/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C9u1R-kRF59/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C9u1R-kRF59/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Gus &amp; Jean (@gusandjeanmusic)</a></p></div></blockquote>
+  <script async src="//www.instagram.com/embed.js"></script>
+          <p class="card-text text-muted" style="padding-top: 10px;">"Late Night Talking" - Harry Styles</p>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C9SVox8uKyB/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C9SVox8uKyB/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C9SVox8uKyB/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Gus &amp; Jean | Acoustic Duo (@gusandjeanmusic)</a></p></div></blockquote>
+  <script async src="//www.instagram.com/embed.js"></script>
+        </div>
+      -->
         
-        <iframe class="youtube-video" src="https://www.youtube.com/embed/GPqa20-6wXA?si=tFOUO0-UAZKRFAx8" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
-        <iframe style="padding-top: 20px;" class="youtube-video" 
-        src="https://www.youtube.com/embed/PSzMe6NrSyA?si=MJaCFaY0npu7WQAp" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; c
-        lipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-        <a href="https://www.instagram.com/gusandjeanmusic/reels/" target="_blank" class="btn btn-outline-dark btn-lg mx-auto" style="width: 200px; border-radius: 5px; margin-top: 40px">More videos</a>
-        
-
-        <!--        
-
-
-        <p class="card-text text-muted" style="padding-top: 10px;">"The Bones" - Maren Morris</p>
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C9u1R-kRF59/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C9u1R-kRF59/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C9u1R-kRF59/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Gus &amp; Jean (@gusandjeanmusic)</a></p></div></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
-        <p class="card-text text-muted" style="padding-top: 10px;">"Late Night Talking" - Harry Styles</p>
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C9SVox8uKyB/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C9SVox8uKyB/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C9SVox8uKyB/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Gus &amp; Jean | Acoustic Duo (@gusandjeanmusic)</a></p></div></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
+  
+          <h1 class="card-title mx-auto" style="padding-top: 70px; font-size: 2.4rem">Photos</h1>
+          <p id="download-picture" class="card-text">Click on a picture to download a high res photo</p>
+          <div class="mx-auto" >
+            <div class="row"> 
+              <div class="column">
+                <a href="images/14.jpg" download="Gus & Jean - Press Photo">
+                  <img class="photos" src="images/14.jpg">
+                </a>
+                <a href="images/15.jpg" download="Gus & Jean - Press Photo">
+                  <img class="photos" src="images/15.jpg">
+                </a>
+                <a href="images/7.jpg" download="Gus & Jean - Press Photo">
+                  <img class="photos" src="images/7.jpg">
+                </a>
+              </div>
+              <div class="column">
+                <a href="images/2.jpg" download="Gus & Jean - Press Photo">
+                  <img class="photos" src="images/2.jpg">
+                </a>
+                <a href="images/9.jpg" download="Gus & Jean - Press Photo">
+                  <img class="photos" src="images/9.jpg">
+                </a>
+                <a href="images/10.jpg" download="Gus & Jean - Press Photo">
+                  <img class="photos" src="images/10.jpg">
+                </a>
+              </div>
+              
+              <p class="card-text" style="padding-top: 20px;">Photos by 
+                <a href="https://www.licentco.com/" style="color: black;">Licent Photography</a>
+              </p>
+              <a href="https://www.instagram.com/gusandjeanmusic/" target="_blank" class="btn btn-outline-dark btn-lg mx-auto" style="width: 200px; border-radius: 5px; margin-top: 20px">More photos</a>
+            </div>
+          </div>
       </div>
-    -->
       
-
-        <h1 class="card-title mx-auto" style="padding-top: 70px; font-size: 2.4rem">Photos</h1>
-        <p id="download-picture" class="card-text">Click on a picture to download a high res photo</p>
-        <div class="mx-auto" >
-          <div class="row"> 
-            <div class="column">
-              <a href="14.jpg" download="Gus & Jean - Press Photo">
-                <img class="photos" src="14.jpg">
-              </a>
-              <a href="15.jpg" download="Gus & Jean - Press Photo">
-                <img class="photos" src="15.jpg">
-              </a>
-              <a href="7.jpg" download="Gus & Jean - Press Photo">
-                <img class="photos" src="7.jpg">
-              </a>
-            </div>
-            <div class="column">
-              <a href="2.jpg" download="Gus & Jean - Press Photo">
-                <img class="photos" src="2.jpg">
-              </a>
-              <a href="9.jpg" download="Gus & Jean - Press Photo">
-                <img class="photos" src="9.jpg">
-              </a>
-              <a href="10.jpg" download="Gus & Jean - Press Photo">
-                <img class="photos" src="10.jpg">
-              </a>
-            </div>
-            
-            <p class="card-text" style="padding-top: 20px;">Photos by 
-              <a href="https://www.licentco.com/" style="color: black;">Licent Photography</a>
-            </p>
-            <a href="https://www.instagram.com/gusandjeanmusic/" target="_blank" class="btn btn-outline-dark btn-lg mx-auto" style="width: 200px; border-radius: 5px; margin-top: 20px">More photos</a>
+     </div>
+    </div>
+  
+    
+    
+    <div id="contact-section">
+      <div id="contact" class="card mx-auto">
+        <div class="card-body text-center">
+          <h1 class="card-title mx-auto" style="font-size: 2.4rem">Booking</h1>
+          <p>Email us at gusandjeanmusic@gmail.com or fill out the form below.</p>
+          <div >
+            <form id="contact-form" onsubmit="sendEmail(event)">
+               
+              <input type="email" id="email" class="form-control mb-2" style="border: solid; border-width: thin; border-color: grey;" required placeholder="Email address">
+              <input type="text" id="name" class="form-control mb-2" style="border: solid; border-width: thin; border-color: grey;" required placeholder="Name">
+              <textarea id="message" class="form-control mb-3" rows="4" style="border: solid; border-width: thin; border-color: grey;" required placeholder="Message"></textarea>
+              <button type="submit" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 20px;">Send</button>
+            </form>
+          </div>
+          <!-- Hidden div for success message -->
+          <div id="response-message" style="padding: 30px 20px 40px 20px; display: none; background-color:#065B7A; color: white;" class="card">
+            <p>Thank you for your message! We'll get back to you shortly.</p>
+            <img id="response-logo" src="logo-large.png" alt="G&J logo" class="mx-auto" style="width: 150px; height: auto;">
           </div>
         </div>
-    </div>
-    
-   </div>
-  </div>
-
-  
-  
-  <div id="contact-section">
-    <div id="contact" class="card mx-auto">
-      <div class="card-body text-center">
-        <h1 class="card-title mx-auto" style="font-size: 2.4rem">Booking</h1>
-        <p>Email us at gusandjeanmusic@gmail.com or fill out the form below.</p>
-        <div >
-          <form id="contact-form" onsubmit="sendEmail(event)">
-             
-            <input type="email" id="email" class="form-control mb-2" style="border: solid; border-width: thin; border-color: grey;" required placeholder="Email address">
-            <input type="text" id="name" class="form-control mb-2" style="border: solid; border-width: thin; border-color: grey;" required placeholder="Name">
-            <textarea id="message" class="form-control mb-3" rows="4" style="border: solid; border-width: thin; border-color: grey;" required placeholder="Message"></textarea>
-            <button type="submit" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 20px;">Send</button>
-          </form>
-        </div>
-        <!-- Hidden div for success message -->
-        <div id="response-message" style="padding: 30px 20px 40px 20px; display: none; background-color:#065B7A; color: white;" class="card">
-          <p>Thank you for your message! We'll get back to you shortly.</p>
-          <img id="response-logo" src="logo-large.png" alt="G&J logo" class="mx-auto" style="width: 150px; height: auto;">
-        </div>
       </div>
-    </div>
-  </div>    
-    
-   
-  
- 
-  <footer>
-    <div id="footer" class="d-flex flex-column align-items-center">
+    </div>    
       
-      <h1 style="padding: 20px 0 20px 0; font-family: Shrikhand; font-size: 2.5rem;">Gus & Jean</h1>
-      <div class="d-flex justify-content-center align-items-center">
-        <a href="https://www.instagram.com/gusandjeanmusic/" target="_blank"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="23" height="23" class="mx-2" viewBox="0 0 1000 1000"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M295.42,6c-53.2,2.51-89.53,11-121.29,23.48-32.87,12.81-60.73,30-88.45,57.82S40.89,143,28.17,175.92c-12.31,31.83-20.65,68.19-23,121.42S2.3,367.68,2.56,503.46,3.42,656.26,6,709.6c2.54,53.19,11,89.51,23.48,121.28,12.83,32.87,30,60.72,57.83,88.45S143,964.09,176,976.83c31.8,12.29,68.17,20.67,121.39,23s70.35,2.87,206.09,2.61,152.83-.86,206.16-3.39S799.1,988,830.88,975.58c32.87-12.86,60.74-30,88.45-57.84S964.1,862,976.81,829.06c12.32-31.8,20.69-68.17,23-121.35,2.33-53.37,2.88-70.41,2.62-206.17s-.87-152.78-3.4-206.1-11-89.53-23.47-121.32c-12.85-32.87-30-60.7-57.82-88.45S862,40.87,829.07,28.19c-31.82-12.31-68.17-20.7-121.39-23S637.33,2.3,501.54,2.56,348.75,3.4,295.42,6m5.84,903.88c-48.75-2.12-75.22-10.22-92.86-17-23.36-9-40-19.88-57.58-37.29s-28.38-34.11-37.5-57.42c-6.85-17.64-15.1-44.08-17.38-92.83-2.48-52.69-3-68.51-3.29-202s.22-149.29,2.53-202c2.08-48.71,10.23-75.21,17-92.84,9-23.39,19.84-40,37.29-57.57s34.1-28.39,57.43-37.51c17.62-6.88,44.06-15.06,92.79-17.38,52.73-2.5,68.53-3,202-3.29s149.31.21,202.06,2.53c48.71,2.12,75.22,10.19,92.83,17,23.37,9,40,19.81,57.57,37.29s28.4,34.07,37.52,57.45c6.89,17.57,15.07,44,17.37,92.76,2.51,52.73,3.08,68.54,3.32,202s-.23,149.31-2.54,202c-2.13,48.75-10.21,75.23-17,92.89-9,23.35-19.85,40-37.31,57.56s-34.09,28.38-57.43,37.5c-17.6,6.87-44.07,15.07-92.76,17.39-52.73,2.48-68.53,3-202.05,3.29s-149.27-.25-202-2.53m407.6-674.61a60,60,0,1,0,59.88-60.1,60,60,0,0,0-59.88,60.1M245.77,503c.28,141.8,115.44,256.49,257.21,256.22S759.52,643.8,759.25,502,643.79,245.48,502,245.76,245.5,361.22,245.77,503m90.06-.18a166.67,166.67,0,1,1,167,166.34,166.65,166.65,0,0,1-167-166.34" transform="translate(-2.5 -2.5)"/></svg>
-        </a>
-
-        <!--
-        <a href="mailto: gusandjeanmusic@gmail.com" class="link-light">
-        <svg  xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="mx-2 bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
-        </a>
-        -->
-
-        <a href="https://www.facebook.com/profile.php?id=61568608425486" target="_blank" class="link-light mx-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-          </svg>
-        </a>
-      
-        <a href="https://www.youtube.com/@gusandjeanmusic" target="_blank" class="link-light" style="padding-top: 2px;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="mx-2 bi bi-youtube" viewBox="0 0 16 16">
-            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-          </svg>
-        </a>
-        <a href="https://open.spotify.com/artist/4HdZvbA5N2ZFEFBzkJpyqv" target="_blank" class="link-light">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="mx-2 bi bi-spotify" viewBox="0 0 16 16">
-            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
-          </svg>
-        </a>
-
-      </div>
-      
-      <a id="bottom-top-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 20px 0 10px 0;">Back to top</a>
-      <a id="bottom-about-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 10px;">About</a>
-      <a id="bottom-calendar-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 10px;">Schedule</a>
-     
-      <a id="bottom-media-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 10px 0 20px 0 ;">Media</a>
-      
-      
-      <p class="mx-auto" style="align-self: center; margin-bottom: 0; padding-right: 20px;">Join the mailing list:</p>
-      <form style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="mailingList" onsubmit="mailingList(event)">
+    <footer>
+      <div id="footer" class="d-flex flex-column align-items-center">
         
-        <input type="email" id="mailing-list-email" class="form-control mx-2" style="margin-top: 10px; height: 40px; width: 200px; border: solid; border-width: thin; border-color: grey;" required placeholder="Email address">
-        <button type="submit" class="btn btn-outline-light btn-sm mx-2" style="margin-top: 10px; height: 40px; width: 100px; border-radius: 5px; justify-self: center;">Join</button>
-      </form>  
-      <p class="link-light link-offset-2 text-center" style="padding-top: 40px; padding-bottom: 20px;">&copy; Copyright 2025. All Rights Reserved.</p>
-    
-    </div>
-    
-
-  </footer>
-
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script>
-    document.getElementById("togglePastEvents").addEventListener("click", function () {
-      const pastEvents = document.getElementById("past-events");
-      const isVisible = pastEvents.style.display === "block";
+        <h1 style="padding: 20px 0 20px 0; font-family: Shrikhand; font-size: 2.5rem;">Gus & Jean</h1>
+        <div class="d-flex justify-content-center align-items-center">
+          <a href="https://www.instagram.com/gusandjeanmusic/" target="_blank"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="23" height="23" class="mx-2" viewBox="0 0 1000 1000"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M295.42,6c-53.2,2.51-89.53,11-121.29,23.48-32.87,12.81-60.73,30-88.45,57.82S40.89,143,28.17,175.92c-12.31,31.83-20.65,68.19-23,121.42S2.3,367.68,2.56,503.46,3.42,656.26,6,709.6c2.54,53.19,11,89.51,23.48,121.28,12.83,32.87,30,60.72,57.83,88.45S143,964.09,176,976.83c31.8,12.29,68.17,20.67,121.39,23s70.35,2.87,206.09,2.61,152.83-.86,206.16-3.39S799.1,988,830.88,975.58c32.87-12.86,60.74-30,88.45-57.84S964.1,862,976.81,829.06c12.32-31.8,20.69-68.17,23-121.35,2.33-53.37,2.88-70.41,2.62-206.17s-.87-152.78-3.4-206.1-11-89.53-23.47-121.32c-12.85-32.87-30-60.7-57.82-88.45S862,40.87,829.07,28.19c-31.82-12.31-68.17-20.7-121.39-23S637.33,2.3,501.54,2.56,348.75,3.4,295.42,6m5.84,903.88c-48.75-2.12-75.22-10.22-92.86-17-23.36-9-40-19.88-57.58-37.29s-28.38-34.11-37.5-57.42c-6.85-17.64-15.1-44.08-17.38-92.83-2.48-52.69-3-68.51-3.29-202s.22-149.29,2.53-202c2.08-48.71,10.23-75.21,17-92.84,9-23.39,19.84-40,37.29-57.57s34.1-28.39,57.43-37.51c17.62-6.88,44.06-15.06,92.79-17.38,52.73-2.5,68.53-3,202-3.29s149.31.21,202.06,2.53c48.71,2.12,75.22,10.19,92.83,17,23.37,9,40,19.81,57.57,37.29s28.4,34.07,37.52,57.45c6.89,17.57,15.07,44,17.37,92.76,2.51,52.73,3.08,68.54,3.32,202s-.23,149.31-2.54,202c-2.13,48.75-10.21,75.23-17,92.89-9,23.35-19.85,40-37.31,57.56s-34.09,28.38-57.43,37.5c-17.6,6.87-44.07,15.07-92.76,17.39-52.73,2.48-68.53,3-202.05,3.29s-149.27-.25-202-2.53m407.6-674.61a60,60,0,1,0,59.88-60.1,60,60,0,0,0-59.88,60.1M245.77,503c.28,141.8,115.44,256.49,257.21,256.22S759.52,643.8,759.25,502,643.79,245.48,502,245.76,245.5,361.22,245.77,503m90.06-.18a166.67,166.67,0,1,1,167,166.34,166.65,166.65,0,0,1-167-166.34" transform="translate(-2.5 -2.5)"/></svg>
+          </a>
   
-      pastEvents.style.display = isVisible ? "none" : "block";
-      this.textContent = isVisible ? "Show Past Events" : "Hide Past Events";
-    });
-  </script>
-</body>
-
+          <!--
+          <a href="mailto: gusandjeanmusic@gmail.com" class="link-light">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="mx-2 bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
+          </a>
+          -->
+  
+          <a href="https://www.facebook.com/profile.php?id=61568608425486" target="_blank" class="link-light mx-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+          </a>
+        
+          <a href="https://www.youtube.com/@gusandjeanmusic" target="_blank" class="link-light" style="padding-top: 2px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="mx-2 bi bi-youtube" viewBox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+            </svg>
+          </a>
+          <a href="https://open.spotify.com/artist/4HdZvbA5N2ZFEFBzkJpyqv" target="_blank" class="link-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="mx-2 bi bi-spotify" viewBox="0 0 16 16">
+              <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
+            </svg>
+          </a>
+  
+        </div>
+        
+        <a id="bottom-top-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 20px 0 10px 0;">Back to top</a>
+        <a id="bottom-about-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 10px;">About</a>
+        <a id="bottom-calendar-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 10px;">Schedule</a>
+       
+        <a id="bottom-media-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 10px 0 20px 0 ;">Media</a>
+        
+        
+        <p class="mx-auto" style="align-self: center; margin-bottom: 0; padding-right: 20px;">Join the mailing list:</p>
+        <form style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="mailingList" onsubmit="mailingList(event)">
+          
+          <input type="email" id="mailing-list-email" class="form-control mx-2" style="margin-top: 10px; height: 40px; width: 200px; border: solid; border-width: thin; border-color: grey;" required placeholder="Email address">
+          <button type="submit" class="btn btn-outline-light btn-sm mx-2" style="margin-top: 10px; height: 40px; width: 100px; border-radius: 5px; justify-self: center;">Join</button>
+        </form>  
+        <p class="link-light link-offset-2 text-center" style="padding-top: 40px; padding-bottom: 20px;">&copy; Copyright 2025. All Rights Reserved.</p>
+      
+      </div>
+      
+  
+    </footer>
+  
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById("togglePastEvents").addEventListener("click", function () {
+        const pastEvents = document.getElementById("past-events");
+        const isVisible = pastEvents.style.display === "block";
+    
+        pastEvents.style.display = isVisible ? "none" : "block";
+        this.textContent = isVisible ? "Show Past Events" : "Hide Past Events";
+      });
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "Gus & Jean",
+        "description": "Live acoustic duo based in Manchester, NH. Performing at receptions, parties, venues, and events across Southern New Hampshire/Maine and Massachusetts.",
+        "url": "https://www.gusandjean.com",
+        "sameAs": [
+          "https://www.instagram.com/gusandjeanmusic",
+          "https://www.facebook.com/profile.php?id=61568608425486"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "NH",
+          "addressCountry": "US"
+        }
+      }
+    </script>
+  </body>
 </html>

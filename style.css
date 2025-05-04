@@ -2,9 +2,6 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-
-  
-
 .card {
     padding: 70px 11px 70px 11px;
     border: none;
@@ -13,12 +10,25 @@
 
 
 
-footer {
-   
+
+/* Navbar START*/
+
+.navbar {
     background-color: #065B7A;
     color: white;
 }
 
+.navbar-brand {
+    font-family: Shrikhand; 
+    font-size: 2.25rem; 
+    padding: 0px; margin: 0px;
+}
+
+/* Navbar END*/
+
+
+
+/* About section START*/
 
 #about {
     background-color:#A4E6EC;
@@ -28,13 +38,47 @@ footer {
     background-color:#A4E6EC;
 }
 
-#contact {
-    background-color:#FDFD96;
+#hero-image {
+    border-radius: 5px; 
+    width: 80%; 
+    max-width: 700px; 
+    height: auto; 
+    margin-top: 100px;
 }
 
-#contact-section {
-    background-color:#FDFD96;
+#about-gusandjean {
+    font-family: Shrikhand; 
+    font-size: 3.4rem; 
+    margin-bottom: 0; 
+    padding-bottom: 0;
 }
+
+#about-acoustic-duo {
+    padding: 0 0 20px 0; 
+    margin-top: 0;
+}
+
+.about-text {
+    text-align: justify;
+}
+
+#about-logo {
+    width: 150px; 
+    height: auto;
+    padding-top: 20px;
+}
+
+#about-book-button {
+    width: 200px; 
+    border-radius: 5px; 
+    margin-top: 40px;
+}
+/* About section END */
+
+
+
+
+/* Calendar section START */
 
 #calendar {
     background-color: #F0A59F;
@@ -44,6 +88,55 @@ footer {
     background-color: #F0A59F;
 }
 
+#calendar-title {
+    font-size: 2.4rem;
+}
+
+.month-text {
+    padding-top: 40px;
+}
+
+.d-flex {
+    gap: 0px;
+}
+
+.date-container {
+    width: 30%; 
+    text-align: center;
+}
+
+.day-of-the-week {
+    margin-bottom: 0;
+}
+
+.event-description {
+    width: 80%;
+}
+
+.venue-logo-container { 
+    border-radius: 10px; 
+    width: 40%;
+}
+
+.venue-logo {
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+    object-fit: cover; 
+}
+
+.venue-link {
+    color: black;
+}
+
+.events-divider {
+    margin-left: 5%; 
+    width: 90%;
+}
+
+/* Calendar section END */
+
+
 #media {
     background-color: #FDFD96;
 }
@@ -52,15 +145,23 @@ footer {
     background-color: #FDFD96;
 }
 
-.navbar {
+
+
+#contact {
+    background-color:#A4E6EC;
+}
+
+#contact-section {
+    background-color:#A4E6EC;
+}
+
+
+
+footer {
+   
     background-color: #065B7A;
     color: white;
 }
-
-.d-flex {
-    gap: 0px;
-}
-
 
 
 
@@ -92,11 +193,5 @@ footer {
     width: 100%;
   }
   
-  .venue-logo {
-    border-radius: 10px;
-    width: 100px;
-    height: auto;
-    object-fit: cover; 
-  }
 
   
