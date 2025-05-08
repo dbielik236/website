@@ -54,8 +54,6 @@ scroll(calDiv, bottomCalTab);
 scroll(aboutDiv, bottomAboutTab);
 scroll(topDiv, bottomTopTab);
 scroll(vidDiv, bottomVidTab);
-scroll(contDiv, bookButton1);
-scroll(contDiv, bookButton2);
 
 
 
