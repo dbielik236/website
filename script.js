@@ -34,8 +34,8 @@ const aboutTab = document.getElementById("about-tab");
 const bottomAboutTab = document.getElementById("bottom-about-tab");
 const contDiv = document.getElementById("contact");
 const contTab = document.getElementById("contact-tab");
-const bookButton1 = document.getElementById("booking-button-1");
-const bookButton2 = document.getElementById("booking-button-2");
+const bookingButton1 = document.getElementById("about-booking-button");
+const bookingButton2 = document.getElementById("calendar-booking-button");
 
 
 function scroll(div, tab) {
@@ -54,7 +54,8 @@ scroll(calDiv, bottomCalTab);
 scroll(aboutDiv, bottomAboutTab);
 scroll(topDiv, bottomTopTab);
 scroll(vidDiv, bottomVidTab);
-
+scroll(contDiv, bookingButton1);
+scroll(contDiv, bookingButton2);
 
 
 function updateDownloadAttribute() {
