@@ -73,7 +73,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <button id="contact-tab" class="nav-link">Booking/Contact</button>
+                <button id="contact-tab" class="nav-link">Booking</button>
               </li>
             </ul>
           </div>
@@ -640,8 +640,19 @@
       <div id="contact" class="card mx-auto">
         <div class="card-body text-center">
           <h1 class="card-title mx-auto" style="font-size: 2.4rem">Booking</h1>
-          <p>Email us at gusandjeanmusic@gmail.com or fill out the form below.</p>
-          <div >
+          
+          
+          <!--
+          <div class="contact-containers">
+            <h2>Breweries, Wineries, and Patios</h2>
+            <img class="contact-image" src="images/receptions.png">
+          </div>
+          <div class="contact-containers">  
+            <h2>Markets and Outdoor Festivals</h2>
+            <img class="contact-image" src="images/festivals.png">
+          </div>
+          -->
+          <p>Contact us at gusandjeanmusic@gmail.com or fill out the form below.</p>
             <form id="contact-form" onsubmit="sendEmail(event)">
                
               <input type="email" id="email" class="form-control mb-2" style="border: solid; border-width: thin; border-color: grey;" required placeholder="Email address">
@@ -649,11 +660,22 @@
               <textarea id="message" class="form-control mb-3" rows="4" style="border: solid; border-width: thin; border-color: grey;" required placeholder="Message"></textarea>
               <button type="submit" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 20px;">Send</button>
             </form>
+
+            <div class="contact-containers">
+              <h1>Reviews</h1>
+              <img class="contact-image" src="images/receptions.png">
+              <p>"This weekend I held a 5-course pop-up dinner at The Greenery in Milton, NH for 40 guests. 
+                Gus & Jean were an absolute joy to work with and provided the exact experience I was looking for. 
+                I was so happy to hear the guests say things like 'it was the perfect addition to the event, 
+                and a bonus I knew every song!' I will definitely be reaching out to them again for future events!"</p>
+              <p>&starf; &starf; &starf; &starf; &starf; <a href="https://elevatedeatsnh.com" style="color: black;" target="_blank">Jonathan Vogt, Owner/Chef - Elevated Eats</a></p>
+            </div>
           </div>
+
           <!-- Hidden div for success message -->
           <div id="response-message" style="padding: 30px 20px 40px 20px; display: none; background-color:#065B7A; color: white;" class="card">
             <p>Thank you for your message! We'll get back to you shortly.</p>
-            <img id="response-logo" src="logo-large.png" alt="G&J logo" class="mx-auto" style="width: 150px; height: auto;">
+            <img id="response-logo" src="images/logo-large.png" alt="G&J logo" class="mx-auto" style="width: 150px; height: auto;">
           </div>
         </div>
       </div>

@@ -40,7 +40,8 @@ const bookButton2 = document.getElementById("booking-button-2");
 
 function scroll(div, tab) {
 tab.addEventListener("click", () => {
-  div.scrollIntoView();
+  div.scrollIntoView({ behavior: "smooth" });
+
 });
 }
 
@@ -59,20 +60,18 @@ scroll(contDiv, bookButton2);
 
 
 function updateDownloadAttribute() {
-  
   const download = document.getElementById("download-picture");
+
   if (window.innerWidth < 1100) {
-      
-    document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll("a > img.photos").forEach(img => {
-          const anchor = img.parentNode; // Get the parent <a> element
-          const column = anchor.parentNode; // Get the parent .column
-  
-          column.insertBefore(img, anchor); // Move the <img> out of the <a>
-          anchor.remove(); // Remove the <a> wrapper
-        });
+    document.querySelectorAll("a > img.photos").forEach(img => {
+      const anchor = img.parentNode;
+      const column = anchor.parentNode;
+
+      column.insertBefore(img, anchor);
+      anchor.remove();
     });
-      download.innerText="";
+
+    download.innerText = "";
   }
 }
 
@@ -83,10 +82,11 @@ updateDownloadAttribute();
 window.addEventListener('resize', updateDownloadAttribute);
 
 window.onload = function() {
-  emailjs.init("ODJ1kRiFgD7_SwxD9"); // Replace with your EmailJS Public Key
+  emailjs.init("Abm0b8RIpGS0ezhMr"); // Replace with your EmailJS Public Key
 };
 
 function sendEmail(event) {
+  
   event.preventDefault();
 
   let form = document.getElementById("contact-form"); // Get the form element
@@ -134,10 +134,5 @@ function mailingList(event) {
           // Optional: clear the input field
           document.getElementById("mailing-list-email").value = "";
       })
-      .catch(error => {
-          if (responseMessage) {
-            responseMessage.innerHTML = "<p style='color: red;'>Error sending email. Please try again.</p>";
-            responseMessage.style.display = "block";
-          }
-      });
+      
 }
