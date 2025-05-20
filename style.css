@@ -40,7 +40,7 @@
 
 #hero-image {
     border-radius: 5px; 
-    width: 80%; 
+    width: 85%; 
     max-width: 700px; 
     height: auto; 
     margin-top: 100px;
@@ -110,7 +110,8 @@
 }
 
 .event-description {
-    width: 80%;
+    width: 60%;
+    
 }
 
 .venue-logo-container { 
