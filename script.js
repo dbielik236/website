@@ -20,8 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', updateNavbarAttributes);
 });
 
-const topDiv = document.getElementById("top");
+/* const topDiv = document.getElementById("top");
 const topTab = document.getElementById("top-tab");
+*/
 const bottomTopTab = document.getElementById("bottom-top-tab");
 const vidDiv = document.getElementById("media");
 const vidTab = document.getElementById("media-tab");
@@ -48,7 +49,7 @@ tab.addEventListener("click", () => {
 scroll(calDiv, calTab);
 scroll(aboutDiv, aboutTab);
 scroll(contDiv, contTab);
-scroll(topDiv, topTab);
+/* scroll(topDiv, topTab); */
 scroll(vidDiv, vidTab);
 scroll(calDiv, bottomCalTab);
 scroll(aboutDiv, bottomAboutTab);
