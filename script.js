@@ -20,9 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', updateNavbarAttributes);
 });
 
-/* const topDiv = document.getElementById("top");
+const topDiv = document.getElementById("top");
 const topTab = document.getElementById("top-tab");
-*/
 const bottomTopTab = document.getElementById("bottom-top-tab");
 const vidDiv = document.getElementById("media");
 const vidTab = document.getElementById("media-tab");
@@ -37,7 +36,7 @@ const contDiv = document.getElementById("contact");
 const contTab = document.getElementById("contact-tab");
 const bookingButton1 = document.getElementById("about-booking-button");
 const bookingButton2 = document.getElementById("calendar-booking-button");
-
+const bookingDiv = document.getElementById("booking");
 
 function scroll(div, tab) {
 tab.addEventListener("click", () => {
@@ -55,8 +54,8 @@ scroll(calDiv, bottomCalTab);
 scroll(aboutDiv, bottomAboutTab);
 scroll(topDiv, bottomTopTab);
 scroll(vidDiv, bottomVidTab);
-scroll(contDiv, bookingButton1);
-scroll(contDiv, bookingButton2);
+scroll(bookingDiv, bookingButton1);
+scroll(bookingDiv, bookingButton2);
 
 
 function updateDownloadAttribute() {
