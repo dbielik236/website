@@ -11,11 +11,14 @@
 
 
 
+
+
 /* Navbar START*/
 
 .navbar {
     background-color: #065B7A;
     color: white;
+    
 }
 
 .navbar-brand {
@@ -76,8 +79,6 @@
 /* About section END */
 
 
-
-
 /* Calendar section START */
 
 #calendar {
@@ -86,12 +87,10 @@
 
 #calendar-section {
     background-color: #F0A59F;
-    
 }
 
 #calendar-title {
     font-size: 2.4rem;
-    
 }
 
 .month-text {
@@ -196,29 +195,37 @@ footer {
     display: flex;
     flex-wrap: wrap;
     
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
+}
 
-  .photos {
-    border-radius: 10px;
-  }
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.photos {
+  border-radius: 10px;
+}
+
+
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
   
-  
-  
-  .youtube-video {
-    aspect-ratio: 16 / 9;
-    width: 100%;
-  }
-  
+
+
+@media screen and (min-width: 768px) {
+    #booking-container {
+      display: flex;
+      gap: 20px;
+    }
+}

@@ -841,19 +841,20 @@
           <p class="card-text">Recorded in front of a live audience at 
             <a href="https://thestudioportland.com/" style="color: black;">The Studio Portland</a>
           </p>
-          <div class="video-container">
-            <iframe class="youtube-video" src="https://www.youtube.com/embed/GPqa20-6wXA?si=tFOUO0-UAZKRFAx8" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <div class="video-container" style="padding-top: 20px;" >
+          <div class="video-container" >
             <iframe class="youtube-video" 
             src="https://www.youtube.com/embed/PSzMe6NrSyA?si=MJaCFaY0npu7WQAp" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
             clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
+          <div class="video-container" style="padding-top: 20px;">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/GPqa20-6wXA?si=tFOUO0-UAZKRFAx8" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          
           <a href="https://www.instagram.com/gusandjeanmusic/reels/" target="_blank" class="btn btn-outline-dark btn-lg mx-auto" style="width: 200px; border-radius: 5px; margin-top: 40px">More videos</a>
           
   
@@ -913,11 +914,8 @@
     <div id="contact-section">
       <div id="contact" class="card mx-auto">
         <div class="card-body text-center">
-          
-
           <h1 class="card-title mx-auto" style="font-size: 2.4rem; margin-bottom: 0px;">Providing Live Music For:</h1>
-          
-          <div class="booking-container" style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+          <div id="booking-container">
             <div class="booking-column">
               <div class="contact-containers mx-auto" style="max-width: 350px;">
                 <h4 class="review-heading"><em>Weddings/Receptions</em></h4>
@@ -1000,17 +998,79 @@
             </div>
             
             <div style="text-align: left; padding-bottom: 20px;">
-              <p class="card-text"><b>Palace Theatre: Arts Festival</b>
+              <p class="card-text"><b>Palace Theatre's Arts Festival</b>
                 <br>Manchester, NH</p>
             </div>
             <div style="text-align: left; padding-bottom: 20px;">
               <p class="card-text"><b>Vine 32 - Wine + Graze Bar</b>
                 <br>Bedford, NH</p>
             </div>
-          </div>
-        </div>  
             
-        
+          </div>
+          
+        </div>  
+        <button id="toggleMoreVenues" class="btn btn-outline-dark btn-sm" style="display: block; margin: 0 auto; margin-top: 20px;">
+            See More &#x25BE;
+          </button>
+        <div id="more-venues" class="venues-container" style="display: none; gap: 20px;">
+          <div class="venues-column" style="width: 50%; ">
+            <div style="text-align: left; padding-bottom: 20px;">
+              <p class="card-text"><b>The Lazy Lion</b>
+              <br>Deerfield, NH</p>
+            </div>
+            <div style="text-align: left; padding-bottom: 20px;">
+              <p class="card-text"><b>Luk's Bar and Grill</b>
+                <br>Hudson, NH</p>
+            </div>
+            <div style="text-align: left; padding-bottom: 20px;">
+              <p class="card-text"><b>Hare of the Dawg Bar & Grill</b>
+                <br>Derry, NH</p>
+            </div>
+            <div style="text-align: left; padding-bottom: 20px;">
+              <p class="card-text"><b>Palace Theatre's Shop the Block</b>
+                <br>Manchester, NH</p>
+            </div>
+            
+            <div style="text-align: left; padding-bottom: 20px;">
+              <p class="card-text"><b>Mast Rd. Community Market</b>
+              <br>Goffstown, NH</p>
+            </div>
+            <div style="text-align: left; padding-bottom: 20px;">
+              <p class="card-text"><b>Patrick's Pub</b>
+                <br>Gilford, NH</p>
+            </div>
+          </div> 
+          
+          <div class="venues-column" style="width: 50%; ">
+            <div style="text-align: left; padding-bottom: 20px;">
+              <p class="card-text"><b>Stonecutter's Pub</b>
+                <br>Milford, NH</p>
+            </div>
+            <div style="text-align: left; padding-bottom: 20px;">
+              <p class="card-text"><b>The Greenery</b>
+                <br>Milton, NH</p>
+            </div>
+           <div style="text-align: left; padding-bottom: 20px;">
+              <p class="card-text"><b>Farmers' Market of Keene</b>
+                <br>Keene, NH</p>
+            </div>
+            
+            <div style="text-align: left; padding-bottom: 20px;">
+              <p class="card-text"><b>WEN Networking Mixer</b>
+                <br>Bedford, NH</p>
+            </div>
+            <div style="text-align: left; padding-bottom: 20px;">
+              <p class="card-text"><b>Sunapee Community CoffeeHouse</b>
+                <br>Sunapee, NH</p>
+            </div>
+            <div style="text-align: left; padding-bottom: 20px;">
+              <p class="card-text"><b>Amphora</b>
+                <br>Derry, NH</p>
+            </div>
+            
+          </div>
+          
+        </div>  
 
           <h1 id="booking" class="card-title mx-auto" style="font-size: 2.4rem; padding-top: 80px;">Booking Inquiries</h1>
 
@@ -1112,7 +1172,17 @@
   const isVisible = pastEvents.style.display === "block";
 
   pastEvents.style.display = isVisible ? "none" : "block";
-  this.textContent = isVisible ? "Show Past Events" : "Hide Past Events";
+  
+
+  // Hide the toggle button after it’s clicked
+  this.style.display = "none";
+});
+
+     document.getElementById("toggleMoreVenues").addEventListener("click", function () {
+  const moreVenues = document.getElementById("more-venues");
+  const isVisible = moreVenues.style.display === "flex";
+
+  moreVenues.style.display = isVisible ? "none" : "flex";
 
   // Hide the toggle button after it’s clicked
   this.style.display = "none";

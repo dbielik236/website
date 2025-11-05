@@ -135,3 +135,14 @@ function mailingList(event) {
       })
       
 }
+
+document.getElementById("togglePastEvents").addEventListener("click", function () {
+const pastEvents = document.getElementById("past-events");
+const isVisible = pastEvents.style.display === "block";
+
+pastEvents.style.display = isVisible ? "none" : "block";
+this.textContent = isVisible ? "Show Past Events" : "Hide Past Events";
+
+// Hide the toggle button after it’s clicked
+this.style.display = "none";
+});
