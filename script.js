@@ -37,6 +37,10 @@ const contTab = document.getElementById("contact-tab");
 const bookingButton1 = document.getElementById("about-booking-button");
 const bookingButton2 = document.getElementById("calendar-booking-button");
 const bookingDiv = document.getElementById("booking");
+const markets = document.getElementById("markets");
+const corporate = document.getElementById("corporate");
+const weddings = document.getElementById("weddings");
+const parties = document.getElementById("parties");
 
 function scroll(div, tab) {
 tab.addEventListener("click", () => {
@@ -56,6 +60,10 @@ scroll(topDiv, bottomTopTab);
 scroll(vidDiv, bottomVidTab);
 scroll(bookingDiv, bookingButton1);
 scroll(bookingDiv, bookingButton2);
+scroll(bookingDiv, markets);
+scroll(bookingDiv, corporate);
+scroll(bookingDiv, weddings);
+scroll(bookingDiv, parties);
 
 
 function updateDownloadAttribute() {

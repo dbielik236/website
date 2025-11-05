@@ -89,9 +89,7 @@
     background-color: #F0A59F;
 }
 
-#calendar-title {
-    font-size: 2.4rem;
-}
+
 
 .month-text {
     padding-top: 40px;
@@ -168,10 +166,14 @@ iframe {
     width: 100%;
     border: solid;
     border-radius: 10px;
-    border-color: white;
+    border-color: #A4E6EC;
     border-width: 5px;
     margin-bottom: 10px;
     margin-top: 4px;
+}
+
+.contact-image:hover {
+    border-color: white;
 }
 
 .contact-containers {
