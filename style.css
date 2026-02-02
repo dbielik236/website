@@ -196,7 +196,7 @@ footer {
 .row {
     display: flex;
     flex-wrap: wrap;
-    
+  
 }
 
 /* Create four equal columns that sits next to each other */
@@ -204,6 +204,7 @@ footer {
   flex: 50%;
   max-width: 50%;
   padding: 0 4px;
+  
 }
 
 .column img {
