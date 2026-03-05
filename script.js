@@ -144,3 +144,24 @@ function mailingList(event) {
       
 }
 
+document.getElementById("copy-short-bio").addEventListener("click", function () {
+  const text = document.getElementById("short-bio-text").innerText;
+
+  navigator.clipboard.writeText(text).then(() => {
+    this.innerText = "Copied!";
+    setTimeout(() => {
+      this.innerText = "Copy bio";
+    }, 2000);
+  });
+});
+
+document.getElementById("copy-long-bio").addEventListener("click", function () {
+  const text = document.getElementById("long-bio-text").innerText;
+
+  navigator.clipboard.writeText(text).then(() => {
+    this.innerText = "Copied!";
+    setTimeout(() => {
+      this.innerText = "Copy bio";
+    }, 2000);
+  });
+});
