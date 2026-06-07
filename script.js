@@ -1,71 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // Function to update navbar attributes based on window size
-  const updateNavbarAttributes = () => {
-    const navbarNav = document.getElementById('navbarNav');
-    if (navbarNav) {
-      if (window.innerWidth > 768) {
-        navbarNav.removeAttribute('data-bs-toggle');
-        navbarNav.removeAttribute('data-bs-target');
-      } else {
-        navbarNav.setAttribute('data-bs-toggle', 'collapse');
-        navbarNav.setAttribute('data-bs-target', '#navbarNav');
-      }
-    }
-  };
 
-  // Run the function on page load
-  updateNavbarAttributes();
 
-  // Add event listener for window resize
-  window.addEventListener('resize', updateNavbarAttributes);
-});
 
-const topDiv = document.getElementById("top");
-const topTab = document.getElementById("top-tab");
-const bottomTopTab = document.getElementById("bottom-top-tab");
-const vidDiv = document.getElementById("media");
-const vidTab = document.getElementById("media-tab");
-const bottomVidTab = document.getElementById("bottom-media-tab");
-const calDiv = document.getElementById("calendar");
-const calTab = document.getElementById("calendar-tab");
-const bottomCalTab = document.getElementById("bottom-calendar-tab");
-const aboutDiv = document.getElementById("about");
-const aboutTab = document.getElementById("about-tab");
-const bottomAboutTab = document.getElementById("bottom-about-tab");
-const contDiv = document.getElementById("contact");
-const contTab = document.getElementById("contact-tab");
-const bookingTab = document.getElementById("booking-tab");
-const bookingButton1 = document.getElementById("about-booking-button");
-const bookingButton2 = document.getElementById("calendar-booking-button");
-const bookingDiv = document.getElementById("booking");
-const markets = document.getElementById("markets");
-const corporate = document.getElementById("corporate");
-const weddings = document.getElementById("weddings");
-const parties = document.getElementById("parties");
 
-function scroll(div, tab) {
-tab.addEventListener("click", () => {
-  div.scrollIntoView({ behavior: "smooth" });
-
-});
-}
-
-scroll(calDiv, calTab);
-scroll(aboutDiv, aboutTab);
-scroll(contDiv, contTab);
-/* scroll(topDiv, topTab); */
-scroll(vidDiv, vidTab);
-scroll(calDiv, bottomCalTab);
-scroll(aboutDiv, bottomAboutTab);
-scroll(topDiv, bottomTopTab);
-scroll(vidDiv, bottomVidTab);
-scroll(bookingDiv, bookingTab);
-scroll(bookingDiv, bookingButton1);
-scroll(bookingDiv, bookingButton2);
-scroll(bookingDiv, markets);
-scroll(bookingDiv, corporate);
-scroll(bookingDiv, weddings);
-scroll(bookingDiv, parties);
 
 
 function updateDownloadAttribute() {
@@ -90,39 +26,54 @@ updateDownloadAttribute();
 // Run on window resize
 window.addEventListener('resize', updateDownloadAttribute);
 
-window.onload = function() {
-  emailjs.init("Abm0b8RIpGS0ezhMr"); // Replace with your EmailJS Public Key
+window.onload = function () {
+
+  emailjs.init("Abm0b8RIpGS0ezhMr");
+
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", sendEmail);
 };
 
 function sendEmail(event) {
-  
+
   event.preventDefault();
 
-  let form = document.getElementById("contact-form"); // Get the form element
-  let responseMessage = document.getElementById("response-message"); // Get the response div
-
+  let form = document.getElementById("contact-form");
+  let responseMessage = document.getElementById("response-message");
 
   let templateParams = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    type: document.getElementById("type").value,
+    location: document.getElementById("location").value,
+    date: document.getElementById("date").value,
+    count: document.getElementById("count").value,
+   
+    message: document.getElementById("message").value
   };
 
-  emailjs.send("service_gj83vl5", "template_h8vmcw1", templateParams)
-      .then(response => {
-          // Hide the form
-          form.style.display = "none";
-          
-          // Show the success message
-          
-          responseMessage.style.display = "block"; // Make sure the div is visible
-          
-      })
-      .catch(error => {
-          responseMessage.innerHTML = "<p style='color: red;'>Error sending email. Please try again.</p>";
-          responseMessage.style.display = "block";
-      });
+  emailjs
+    .send("service_gj83vl5", "template_h8vmcw1", templateParams)
+    .then(function(response) {
+
+      form.style.display = "none";
+      responseMessage.style.display = "block";
+
+      console.log("SUCCESS!", response);
+
+    })
+    .catch(function(error) {
+
+      console.log("FAILED...", error);
+
+      responseMessage.innerHTML =
+        "<p style='color:red;'>Error sending email. Please try again.</p>";
+
+      responseMessage.style.display = "block";
+    });
 }
+
 function mailingList(event) {
   event.preventDefault();
 
@@ -165,5 +116,14 @@ document.getElementById("copy-long-bio").addEventListener("click", function () {
     setTimeout(() => {
       this.innerText = "Copy bio";
     }, 2000);
+  });
+});
+
+document.querySelectorAll('.dropdown-custom > .nav-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    if (window.innerWidth < 768) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('active');
+    }
   });
 });

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Looking for live acoustic music across New Hampshire, Maine, and Massachusetts? Gus & Jean was recently voted Best Local Musical Act, and is perfect for your reception, party, or event." />
-    <title>Live Acoustic Music in New England - Gus & Jean</title>
+    <title>Live Acoustic Music for Events - Gus & Jean</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
   
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   </head>
@@ -32,16 +35,10 @@
   {
     "@context": "https://schema.org",
     "@type": "MusicGroup",
-    "name": "[Your Duo Name]",
-    "description": "Live acoustic music duo available for weddings, events, and restaurants in New Hampshire.",
-    "url": "https://yourwebsite.com",
-    "sameAs": ["https://www.instagram.com/yourduo", "https://www.facebook.com/yourduo"],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Manchester",
-      "addressRegion": "NH",
-      "addressCountry": "US"
-    }
+    "name": "[Gus & Jean]",
+    "description": "Live acoustic music duo available for weddings, events, and venues in New England.",
+    "url": "https://gusandjean.com",
+    "sameAs": ["https://www.instagram.com/gusandjeanmusic", "https://www.facebook.com/gusandjeanmusic,", "https://www.youtube.com/@gusandjeanmusic"], 
   }
   </script>
 
@@ -49,2067 +46,314 @@
     <section id="header">
       <nav class="navbar navbar-expand-md fixed-top navbar-dark mt-auto">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">G&J</a>
+          <a class="navbar-brand" href="/">G&J</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 px-3 mb-lg-0">
-              <!--
               <li class="nav-item">
-                <button id="top-tab" class="nav-link hover-overlay">Home</button>
+                <a href="/" id="booking-tab" class="nav-link">Home</a>
               </li>
-              -->  
-              <li class="nav-item">
-                <button id="about-tab" class="nav-link">About</button>
-              </li>
-              <li class="nav-item" >
-                <button id="calendar-tab" class="nav-link">Schedule</button>
-              </li>
-              <li class="nav-item" >
-                <button id="media-tab" class="nav-link">Music</button>
-              </li>
-              <li class="nav-item">
-                <button id="contact-tab" class="nav-link">Reviews</button>
-              </li>
-              <li class="nav-item">
-                <button id="booking-tab" class="nav-link">Booking</button>
-              </li>
-              
-              <!--
-              <li class="nav-item">
-                <a href="https://docs.google.com/document/d/e/2PACX-1vRm4shPfEUU3QaVFBTG6TmQa9rAMCBNjAygbOPQWJM2JAji0IR_7bHgqR_CZmLwZpFfT-GflakoXdAU/pub" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-                  <button class="nav-link">EPK</button>
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="nav-link">
+                  Events
                 </a>
+
+                <ul class="dropdown-menu-custom">
+                  <li><a href="/weddings">Weddings</a></li>
+                  <li><a href="/corporate-events">Corporate Events</a></li>
+                  <li><a href="/private-events">Private Celebrations</a></li>
+                </ul>
+              </li>
+              <!--
+              <li class="nav-item" >
+                <a href="/about" id="calendar-tab" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="/music" id="booking-tab" class="nav-link">Music</a>
+              </li>
+              <li class="nav-item">
+                <a href="/FAQ" id="booking-tab" class="nav-link">FAQ</a>
               </li>
               -->
+              <li class="nav-item" >
+                <a href="/schedule" id="calendar-tab" class="nav-link">Schedule</a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="/contact" id="booking-tab" class="nav-link">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </section> 
     
-    <section id="about-section"> 
-      <div id="top" class="text-center">
-        <img id="hero-image" src="images/hero-crop.jpg" class="mx-auto" alt="Acoustic duo performing live music across New Hampshire">
-      </div>
-      <div id="about" class="card mx-auto" >
-        <div class="card-body">
-          <h1 id="about-gusandjean" class="text-center">Gus & Jean</h1>
-          <h5 id="about-acoustic-duo" class="text-center"><em>Acoustic Duo</em></h5>
-          <p class="card-text about-text">
-            An <b>award-winning</b> husband/wife duo based in New England, Gus & Jean are known for their creative interpretations, seamless harmonies, and 
-            undeniable chemistry. From classic hits to contemporary favorites, their wide-ranging 
-            setlist spans covers from <b>Carole King</b> to <b>Harry Styles</b>, creating a soundtrack that resonates with every audience.
-          </p>
-          <p class="card-text about-text">
-            Voted <b>Best Local Musical Act</b> in NH by the The Hippo Press readers poll in 2026, their 
-            dynamic sound has also earned them a growing social media presence that has caught the 
-            attention of <b>Grammy-winning</b> artists <b>James Taylor</b> and <b>Lisa Loeb</b>. 
-          </p>
-          <!--
-          <p class="card-text about-text">
-            Last year marked their breakout year. In the summer of 2024, they were a 
-            <b>featured artist</b> for Play Music on the Porch Day, an annual world-wide event. 
-            They also recorded their debut EP of acoustic covers, <b>Live at The Studio 
-            Portland in Portland, Maine</b>. That fall, they showcased their original music, 
-            placing second in the preliminary rounds of the <b>NH Music Collective's 2024 Singer-Songwriter Contest</b>.
-          </p>
-          -->
-          <p class="card-text about-text">
-            Whether captivating large crowds on the <b>92.5 The River</b> stage at the <b>Palace Theatre's</b>
-             Citywide Arts Festival, bringing their signature sound and energy to venues like 
-            <b>Harpoon Brewery</b>, or creating intimate vibes at <b>private 
-            parties and receptions</b>, Gus & Jean deliver performances that leave audiences 
-            feeling the groove long after the last note.
-          </p>
-          <a href="https://hippopress.com/about/" target="_blank">
-            <div class="text-center">
-              <img id="about-logo" src="images/hippo.png" alt="G&J logo" class="mx-auto" alt="Acoustic duo performing live music across New Hampshire">
-            </div>  
-          </a>      
-          <div class="text-center">     
-            <button id="about-booking-button" class="btn btn-outline-dark btn-lg">Book now</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section id="calendar-section">    
-      <div id="calendar" class="card mx-auto">
-        <div class="calendar-card-body">
-          <h1 id="calendar-title" class="text-center mx-auto" style="margin-top: 20px; font-size: 40px; width: 75%;">Upcoming Schedule</h1>
+    <section id="top-section"> 
+      <div class="hero-section">
 
-  
-          
-  
-          
-          
-          
+        <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline>
+            <source src="images/herolonger.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <h1 class="about-gusandjean">
+              Gus & Jean
+          </h1>
+     
+          <h5 class="about-acoustic-duo">
+              <em>New England's Premier Acoustic Live Music</em>
+          </h5>
+        </div>
+
+      </div>
+      <div id="top-description" class="mx-auto">
         
           
-          <h5 class="card-subtitle mx-2 text-muted month-text">May:</h5>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">8</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://harpoonbrewery.com/manchester-brewery/" target="_blank">
-              <p class="card-text"><b>Harpoon Brewery</b></a>
-                <br>at Queen City Center<br>Manchester, NH</p>
-              <p class="card-text"><em>6:00-9:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://harpoonbrewery.com/manchester-brewery/" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/harpoon.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">10</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.marbleridgewinery.com" target="_blank">
-              <p class="card-text"><b>Marble Ridge Winery</b></a>
-                <br>North Andover, MA</p>
-              <p class="card-text"><em>1:30-4:30pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.marbleridgewinery.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/marbleridge.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">TUE</p>
-              <h1 class="card-text">12</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.shaskeenirishpub.com" target="_blank" >
-              <p class="card-text"><b>The Shaskeen Pub</b></a>
-                <br>Manchester, NH</p>
-              <p class="card-text"><em>8:00-11:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.shaskeenirishpub.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/shaskeen-4.png" alt="Acoustic duo performing live music in NH">
-            </a>
-            
-          </div>
-           <hr class="events-divider">
-
-
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">THU</p>
-              <h1 class="card-text">14</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" >
-              <p class="card-text"><b>Live from the Countertop</b></a>
-                <br>at The Moka Pot<br>Manchester, NH</p>
-              <p class="card-text"><em>7:00-8:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" >
-              <img class="venue-logo shadow-sm" src="images/countertop.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">16</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.democracybrewing.com" target="_blank" >
-              <p class="card-text"><b>Democracy Brewing Eastie</b></a>
-                <br>Boston, MA</p>
-              <p class="card-text"><em>7:00-9:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.democracybrewing.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/democracy.png" alt="Acoustic duo performing live music in NH">
-            </a>
-            
-          </div>
-          <hr class="events-divider">
-
-
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">THU</p>
-              <h1 class="card-text">28</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.tacotourmanchester.com" target="_blank" >
-              <p class="card-text"><b>Taco Tour Manchester</b></a>
-                <br>Live Music at The Moka Pot<br>Manchester, NH</p>
-              <p class="card-text"><em>4:00-7:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.tacotourmanchester.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/tacotour.png" alt="Acoustic duo performing live music in NH">
-            </a>
-            
-          </div>
-          <!--
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">17</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://thenewburyportfarmersmarket.org" target="_blank" >
-              <p class="card-text"><b>Newburyport Farmers' Market</b></a>
-                <br>Newburyport, MA</p>
-              <p class="card-text"><em>9:30am-12:30pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://thenewburyportfarmersmarket.org" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/newburyport.png" alt="Acoustic duo performing live music in NH">
-            </a>
-            
-          </div>
-          -->
-          <h5 class="card-subtitle mx-2 text-muted month-text">June:</h5>
-          <hr>
           
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">6</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" >
-              <p class="card-text"><b>Private Event</b></a>
-                <br>Massachusetts</p>
+          <div >
+            <h1 class="top-description-title"> Music that shapes the atmosphere</h1>
+            <p class="top-description-subtitle">
+              From elegant weddings and cocktail hours to private celebrations and corporate events, Gus & Jean provide acoustic live music that feels effortless, inviting, and perfectly-suited to the moment. 
               
-            </div>
-            <a class="venue-logo-container" >
-              <img class="venue-logo shadow-sm" src="images/private-party.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">7</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.marbleridgewinery.com" target="_blank">
-              <p class="card-text"><b>Marble Ridge Winery</b></a>
-                <br>North Andover, MA</p>
-              <p class="card-text"><em>1:30-4:30pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.marbleridgewinery.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/marbleridge.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">THU</p>
-              <h1 class="card-text">11</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://zorvino.com" target="_blank">
-              <p class="card-text"><b>Zorvino Vineyards</b></a>
-                <br>Sandown, NH</p>
-                <p class="card-text"><em>6:00-8:30pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://zorvino.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/zorvino.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">13</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://harpoonbrewery.com/manchester-brewery/" target="_blank">
-              <p class="card-text"><b>Harpoon Brewery</b></a>
-                <br>at Queen City Center<br>Manchester, NH</p>
-              <p class="card-text"><em>2:00-5:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://harpoonbrewery.com/manchester-brewery/" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/harpoon.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
+            </p>
           </div>
            
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">14</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://kitterycommunitymarket.com" target="_blank" >
-              <p class="card-text"><b>Kittery Community Market</b></a>
-                <br>Kittery, ME</p>
-              <p class="card-text"><em>10:00-1:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://kitterycommunitymarket.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/kittery-market.png" alt="Acoustic duo performing live music in Kittery, Maine">
-            </a>
-            
-          </div> 
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">20</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" >
-              <p class="card-text"><b>Private Event</b></a>
-                <br>New Hampshire</p>
-              
-            </div>
-            <a class="venue-logo-container" >
-              <img class="venue-logo shadow-sm" src="images/private-party.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">THU</p>
-              <h1 class="card-text">25</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.manchestercountryclub.com" target="_blank">
-              <p class="card-text"><b>Manchester Country Club (members only)</b></a>
-                <br>Bedford, NH</p>
-                <p class="card-text"><em>5:30-8:30pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.manchestercountryclub.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/mcc.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-         <h5 class="card-subtitle mx-2 text-muted month-text">July:</h5>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">11</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.gatewayfarmersmarket.com" target="_blank">
-              <p class="card-text"><b>Gateway York Farmers' Market</b></a>
-                <br>York, ME</p>
-                <p class="card-text"><em>10:00-12:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.gatewayfarmersmarket.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/york-farmers-market.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">THU</p>
-              <h1 class="card-text">16</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.manchestercountryclub.com" target="_blank">
-              <p class="card-text"><b>Manchester Country Club (members only)</b></a>
-                <br>Bedford, NH</p>
-                <p class="card-text"><em>5:30-8:30pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.manchestercountryclub.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/mcc.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">THU</p>
-              <h1 class="card-text">23</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="http://www.yarmouthfarmersmarket.org" target="_blank">
-              <p class="card-text"><b>Yarmouth Farmers' Market</b></a>
-                <br>Yarmouth, ME</p>
-                <p class="card-text"><em>4:00-6:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="http://www.yarmouthfarmersmarket.org" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/yarmouth.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <h5 class="card-subtitle mx-2 text-muted month-text">August:</h5>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">THU</p>
-              <h1 class="card-text">6</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.manchestercountryclub.com" target="_blank">
-              <p class="card-text"><b>Manchester Country Club (members only)</b></a>
-                <br>Bedford, NH</p>
-                <p class="card-text"><em>5:30-8:30pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.manchestercountryclub.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/mcc.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">23</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.northandoverfarmersmarket.org" target="_blank" >
-              <p class="card-text"><b>North Andover Farmers Market</b></a>
-                <br>North Andover, MA</p>
-              <p class="card-text"><em>10:00am-1:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/north-andover.png" alt="Acoustic duo performing live music at farmers market in Massachusetts">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">THU</p>
-              <h1 class="card-text">27</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://zorvino.com" target="_blank">
-              <p class="card-text"><b>Zorvino Vineyards</b></a>
-                <br>Sandown, NH</p>
-                <p class="card-text"><em>6:00-8:30pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://zorvino.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/zorvino.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">29</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://marbleheadfarmersmarket.com" target="_blank" >
-              <p class="card-text"><b>Marblehead Farmers Market</b></a>
-                <br>Marblehead, MA</p>
-              <p class="card-text"><em>9:00am-12:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://marbleheadfarmersmarket.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/marblehead-farmers.png" alt="Acoustic duo performing live music in Kittery, Maine">
-            </a>
-            
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">30</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.gilmantonfarmersmarket.com" target="_blank" >
-              <p class="card-text"><b>Gilmanton Farmers Market</b></a>
-                <br>Gilmanton, NH</p>
-              <p class="card-text"><em>11:00-2:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.gilmantonfarmersmarket.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/gilmanton.png" alt="Acoustic duo performing live music in Kittery, Maine">
-            </a>
-            
-          </div>
-          <h5 class="card-subtitle mx-2 text-muted month-text">Sept:</h5>
-          <hr>
           
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">TUE</p>
-              <h1 class="card-text">1</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.shaskeenirishpub.com" target="_blank" >
-              <p class="card-text"><b>The Shaskeen Pub</b></a>
-                <br>Manchester, NH</p>
-              <p class="card-text"><em>8:00-11:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.shaskeenirishpub.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/shaskeen-4.png" alt="Acoustic duo performing live music in NH">
-            </a>
-            
+          <div >     
+            <a href="/contact" id="about-booking-button" class="btn btn-outline-dark btn-lg">Check your date</a>
           </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">12</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.rockportexchange.org/vendors" target="_blank" >
-              <p class="card-text"><b>Rockport Farmers Market</b></a>
-                <br>Rockport, MA</p>
-              <p class="card-text"><em>10:00am-12:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.rockportexchange.org" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/rockport.png" alt="Acoustic duo performing live music in Kittery, Maine">
-            </a>
-            
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">THU</p>
-              <h1 class="card-text">17</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://zorvino.com" target="_blank">
-              <p class="card-text"><b>Zorvino Vineyards</b></a>
-                <br>Sandown, NH</p>
-                <p class="card-text"><em>6:00-8:30pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://zorvino.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/zorvino.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">19</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"  >
-              <p class="card-text"><b>New Boston Farmers Market</b></a>
-                <br>New Boston, NH</p>
-              <p class="card-text"><em>10:00-1:00pm</em></p>
-            </div>
-            <a class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/new-boston.png" alt="Acoustic duo performing live music in Kittery, Maine">
-            </a>
-            
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">THU</p>
-              <h1 class="card-text">24</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.manchestercountryclub.com" target="_blank">
-              <p class="card-text"><b>Manchester Country Club</b></a>
-                <br>Bedford, NH</p>
-                <p class="card-text"><em>5:30-8:30pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.manchestercountryclub.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/mcc.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">27</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://averillhousevineyard.com" target="_blank" >
-              <p class="card-text"><b>Averill House Vineyard</b></a>
-                <br>Brookline, NH</p>
-              <p class="card-text"><em>1:30-3:30pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://averillhousevineyard.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/averill-house.png" alt="Acoustic duo performing live music in Kittery, Maine">
-            </a>
-            
-          </div>
-          <h5 class="card-subtitle mx-2 text-muted month-text">October:</h5>
-          <hr>
-          
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">4</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.northandoverfarmersmarket.org" target="_blank" >
-              <p class="card-text"><b>North Andover Farmers Market</b></a>
-                <br>North Andover, MA</p>
-              <p class="card-text"><em>10:00am-1:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/north-andover.png" alt="Acoustic duo performing live music at farmers market in Massachusetts">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">17</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://teamhaverhill.org/projects/community/haverhill-farmers-market/" target="_blank">
-              <p class="card-text"><b>Haverhill Farmers Market</b></a>
-                <br>Haverhill, MA</p>
-                <p class="card-text"><em>10:00am-1:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://teamhaverhill.org/projects/community/haverhill-farmers-market/" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/haverhill.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">18</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://kitterycommunitymarket.com" target="_blank" >
-              <p class="card-text"><b>Kittery Community Market</b></a>
-                <br>Kittery, ME</p>
-              <p class="card-text"><em>10:00-1:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://kitterycommunitymarket.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/kittery-market.png" alt="Acoustic duo performing live music in Kittery, Maine">
-            </a>
-            
-          </div>
-          
-          <button id="togglePastEvents" class="btn btn-outline-dark btn-sm" style="display: block; margin: 0 auto; margin-top: 40px;">
-            Past events &#x25BE;
-          </button>
-  
-          
-        <div id="past-events" style="display: none;">
-            <h2 class="card-title text-center" style="padding-top: 40px; font-size: 22px;"> Past events </h2>
-            <h5 class="card-subtitle mx-2 text-muted month-text">January:</h5>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">9</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.kettleheadbrewing.com" target="_blank" >
-              <p class="card-text"><b>Kettlehead Brewing Company</b></a>
-                <br>Nashua, NH</p>
-              <p class="card-text"><em>8:00-10:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.kettleheadbrewing.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/kettle2.jpg" alt="Acoustic duo performing live music in Nashua in January">
-            </a>
-            
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">24</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://villageartcafe.com" target="_blank" >
-              <p class="card-text"><b>The Village Art Cafe</b></a>
-                <br>Hillsboro, NH</p>
-              <p class="card-text"><em>11:00am-1:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://villageartcafe.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/villageartcafe.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-            
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">30</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.farmbargrille.com" target="_blank" >
-              <p class="card-text"><b>The Farm Bar & Grille</b></a>
-                <br>Essex, MA</p>
-              <p class="card-text"><em>6:00-9:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.farmbargrille.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/thefarm.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-            
-          </div>
-  <h5 class="card-subtitle mx-2 text-muted month-text">February:</h5>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">1</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.flanneltavern.com" target="_blank" >
-              <p class="card-text"><b>Flannel Tavern</b></a>
-                <br>Chichester, NH</p>
-              <p class="card-text"><em>4:00-7:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.flanneltavern.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/flannel.png" alt="Acoustic duo performing live music in NH">
-            </a>
-            
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">7</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 " href="https://overthemoonfarmstead.com" target="_blank" >
-              <p class="card-text"><b>Over the Moon Farmstead</b></a>
-                <br>Pittsfield, NH</p>
-              <p class="card-text"><em>6:00-9:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://overthemoonfarmstead.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/overthemoon.png" alt="Acoustic duo performing live music in NH">
-            </a>
-            
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">TUE</p>
-              <h1 class="card-text">10</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.shaskeenirishpub.com" target="_blank" >
-              <p class="card-text"><b>The Shaskeen Pub</b></a>
-                <br>Manchester, NH</p>
-              <p class="card-text"><em>8:00-11:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.shaskeenirishpub.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/shaskeen-4.png" alt="Acoustic duo performing live music in NH">
-            </a>
-            
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">15</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.reedsnorth.com" target="_blank" >
-              <p class="card-text"><b>Reed's North</b></a>
-                <br>Warner, NH</p>
-              <p class="card-text"><em>4:00-7:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.reedsnorth.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/reeds.png" alt="Acoustic duo performing live music in NH">
-            </a>
-            
-          </div>
-          <h5 class="card-subtitle mx-2 text-muted month-text">March:</h5>
-          <hr>
-          
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">14</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.democracybrewing.com" target="_blank" >
-              <p class="card-text"><b>Democracy Brewing Eastie</b></a>
-                <br>Boston, MA</p>
-              <p class="card-text"><em>7:00-9:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.democracybrewing.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/democracy.png" alt="Acoustic duo performing live music in NH">
-            </a>
-            
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">TUE</p>
-              <h1 class="card-text">17</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://bluebearinn.com/blue-bear-event/🍀-st-patricks-day-at-blue-bear-inn-🍀/" target="_blank" >
-              <p class="card-text"><b>Blue Bear Inn</b></a>
-                <br>Francestown, NH</p>
-              <p class="card-text"><em>6:00-9:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://bluebearinn.com/blue-bear-event/🍀-st-patricks-day-at-blue-bear-inn-🍀/" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/blue-bear.jpg" alt="Acoustic duo performing live music in NH">
-            </a>
-            
-          </div>
-          
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">20</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.farmbargrille.com" target="_blank" >
-              <p class="card-text"><b>The Farm Bar & Grille</b></a>
-                <br>Essex, MA</p>
-              <p class="card-text"><em>6:00-9:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.farmbargrille.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/thefarm.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-            
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">21</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://zorvino.com" target="_blank">
-              <p class="card-text"><b>Zorvino Vineyards</b></a>
-                <br>Sandown, NH</p>
-                <p class="card-text"><em>6:00-8:30</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://zorvino.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/zorvino.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">28</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.villageartcafe.com" target="_blank" >
-              <p class="card-text"><b>Village Art Cafe</b></a>
-                <br>Hillsborough, NH</p>
-              <p class="card-text"><em>11:00am-12:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.villageartcafe.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/villageartcafe.png" alt="Acoustic duo performing live music in Hillsboro, NH in February">
-            </a>
-            
-          </div>
-          <h5 class="card-subtitle mx-2 text-muted month-text">April:</h5>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">3</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25" href="https://windhamrestaurant.com" target="_blank">
-              <p class="card-text"><b>The Windham Restaurant</b></a>
-                <br>Windham, NH</p>
-              <p class="card-text"><em>5:00-8:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://windhamrestaurant.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/windham.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-            
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">4</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 " >
-              <p class="card-text"><b>Over the Moon Farmstead</b></a>
-                <br>Pittsfield, NH</p>
-              <p class="card-text"><em>6:00-9:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/overthemoon.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </div>
-            
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">11</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.farmbargrille.com" target="_blank" >
-              <p class="card-text"><b>The Farm Bar & Grille</b></a>
-                <br>Essex, MA</p>
-              <p class="card-text"><em>6:00-9:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.farmbargrille.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/thefarm.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-            
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">24</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 " href="https://www.featheredfriendbrewing.com" target="_blank" >
-              <p class="card-text"><b>Feathered Friend Brewing</b></a>
-                <br>Concord, NH</p>
-              <p class="card-text"><em>6:00-9:00pm</em></p>
-            </div>
-            <a class="venue-logo-container" href="https://www.featheredfriendbrewing.com" target="_blank">
-              <img class="venue-logo shadow-sm" src="images/feathered-friend.png" alt="Acoustic duo performing live music in Massachesetts in February">
-            </a>
-            
-          </div>
- 
-        </div>
-          <!--
-          <div style="display: none;">
-            <h2 class="card-title text-center" style="padding-top: 40px; font-size: 22px;"> 2025 Events </h2>
-          
-  
-          <h5 class="card-subtitle mx-2 text-muted month-text">January:</h5>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">10</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.featheredfriendbrewing.com/" target="_blank" >
-              <p class="card-text"><b>Feathered Friend Brewing</b></a>
-                <br>Concord, NH</p>
-              <p class="card-text"><em>6:00-9:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/feathered-friend.png" alt="Acoustic duo performing live music at brewery in Concord, New Hampshire">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">24</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.thelazylionrestaurant.com" target="_blank" >
-              <p class="card-text"><b>The Lazy Lion</b></a>
-                <br>Deerfield, NH</p>
-              <p class="card-text"><em>5:00-8:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/lazy-lion.png" alt="Acoustic duo performing live music at restuarant in Deerfield, NH">
-            </div>
-          </div> 
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">26</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <p class="card-text"><b>Stonecuttters Pub</b></a>
-                <br>Milford, NH</p>
-              <p class="card-text"><em>4:00-7:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/stonecutters-pub.png" alt="Acoustic duo performing live music at pub in Milford, NH">
-            </div>
-          </div> 
-  
-  
-          <h5 class="card-subtitle mx-2 text-muted month-text">February:</h5>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">7</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://luksbarandgrill.com" target="_blank" >
-              <p class="card-text"><b>Luk's Bar and Grill</b></a>
-                <br>Hudson, NH</p>
-              <p class="card-text"><em>7:00-10:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/luks.png" alt="Acoustic duo performing live music at restuarant in Hudson, NH">
-            </div>
-          </div> 
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">TUE</p>
-              <h1 class="card-text">11</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.shaskeenirishpub.com/" target="_blank" >
-              <p class="card-text"><b>The Shaskeen Pub</b></a>
-                <br>Manchester, NH</p>
-              <p class="card-text"><em>8:00-11:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/shaskeen-4.png" alt="Acoustic duo performing live music at Shaskeen Pub in Manchester, NH">
-            </div>
-          </div> 
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text">FRI</p>
-              <h1 class="card-text">14</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.thelazylionrestaurant.com" target="_blank" >
-              <p class="card-text"><b>The Lazy Lion</b></a>
-                <br>Deerfield, NH</p>
-              <p class="card-text"><em>5:00-8:00pm</em></p>
-            </div>
-            <div style="border-radius: 10px; width: 40%;">
-              <img class="venue-logo shadow-sm" src="images/lazy-lion.png" alt="Acoustic duo performing live music at restuarants in southern NH">
-            </div>
-          </div> 
-  
-  
-          <h5 class="card-subtitle mx-2 text-muted month-text">March:</h5>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">7</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.thelazylionrestaurant.com" target="_blank" >
-              <p class="card-text"><b>The Lazy Lion</b></a>
-                <br>Deerfield, NH</p>
-              <p class="card-text"><em>5:00-8:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm"  src="images/lazy-lion.png" alt="Acoustic duo performing live music at restuarants in New Hampshire">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">21</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://elevatedeatsnh.com" target="_blank" >
-              <p class="card-text"><b>Elevated Eats at The Greenery</b></a>
-                <br>Milton, NH</p>
-              <p class="card-text"><em>6:00-8:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm"  src="images/elevated-eats.png" alt="Acoustic duo performing live music at your next private event">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">22</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://hareofthedawgnh.com" target="_blank" >
-              <p class="card-text"><b>Hare of the Dawg</b></a>
-                <br>Derry, NH</p>
-              <p class="card-text"><em>7:00-10:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/hare-of-the-dawg.png" alt="Acoustic duo performing live music at bar in Derry, NH">
-            </div>
-          </div> 
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">28</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://starkbrewingcompany.com/manchester-stark-brewing-company-events" target="_blank" >
-              <p class="card-text"><b>Stark Brewing Company</b></a>
-                <br>Manchester, NH</p>
-              <p class="card-text"><em>6:30-9:30pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/stark.png" alt="Acoustic duo performing live at brewery in downtown Manchester, NH">
-            </div>
-          </div> 
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">30</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <p class="card-text"><b>Stonecuttters Pub</b></a>
-                <br>Milford, NH</p>
-              <p class="card-text"><em>4:00-7:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/stonecutters-pub.png" alt="Acoustic duo performing live music in Milford, NH">
-            </div>
-          </div>
-          <h5 class="card-subtitle mx-2 text-muted month-text">May:</h5>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">10</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="http://www.keenefarmersmarket.com" target="_blank">
-              <p class="card-text"><b>Farmers' Market of Keene</b></a>
-                <br>Keene, NH</p>
-              <p class="card-text"><em>9:00-1:00am</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/keene-market.png" alt="Acoustic duo performing live music in Keene, NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">10</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <p class="card-text"><b>Private Party</b>
-                <br>NH</p>
-              <p class="card-text"><em></em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/private-party.png" alt="Acoustic duo performing live music at parties and receptions in NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">TUES</p>
-              <h1 class="card-text">27</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.shaskeenirishpub.com/" target="_blank" >
-              <p class="card-text"><b>The Shaskeen Pub</b></a>
-                <br>Manchester, NH</p>
-              <p class="card-text"><em>8:00-11:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/shaskeen-4.png" alt="Acoustic duo performing live music at the Shaskeen in Manchester, NH">
-            </div>
-          </div>
-          <h5 class="card-subtitle mx-2 text-muted month-text">June:</h5>
-          <hr>
-          <div class="d-flex" >
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">1</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://kitterycommunitymarket.com" target="_blank" >
-              <p class="card-text"><b>Kittery Community Market</b></a>
-                <br>Kittery, ME</p>
-              <p class="card-text"><em>10:00-1:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/kittery-market.png" alt="Acoustic duo performing live music in Kittery, Maine">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">THU</p>
-              <h1 class="card-text">5</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.featheredfriendbrewing.com/" target="_blank" >
-              <p class="card-text"><b>Feathered Friend Brewing</b></a>
-                <br>Concord, NH</p>
-              <p class="card-text"><em>6:00-9:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/feathered-friend.png" alt="Acoustic duo performing live music in Concord, New Hampshire">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">15</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.northandoverfarmersmarket.org" target="_blank" >
-              <p class="card-text"><b>North Andover Farmers Market</b></a>
-                <br>North Andover, MA</p>
-              <p class="card-text"><em>10:00am-1:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/north-andover.png" alt="Acoustic duo performing live music at farmers market in Massachusetts">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">TUE</p>
-              <h1 class="card-text">17</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              
-              <p class="card-text"><b>Corporate Event</b></a>
-                <br>Bedford, NH</p>
-              <p class="card-text"><em>6:00pm-8:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/womens-network.png" alt="Acoustic duo performing live music in Bedford, NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">27</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://shoppersmht.com/sports-bar-restaurant-manchester-nh/the-downtown-manchester-collaborative-and-the-palacetheatrenh-are-so-happy-to-present-the-first-annual-shop-the-block-event-20-local-retail-stores-on-one-block-we-like-to-reiterate-how-important-it/" target="_blank" >
-              <p class="card-text"><b>Shop the Block</b></a>
-                <br>Manchester, NH</p>
-              <p class="card-text"><em>4:00-6:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/shop-the-block.png" alt="Acoustic duo performing live music in Concord, New Hampshire">
-            </div>
-          </div>
-          <h5 class="card-subtitle mx-2 text-muted month-text">July:</h5>
-          <hr>
-          <div class="d-flex" >
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">12</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              
-              <p class="card-text"><b>Graduation Party</b></a>
-                <br>NH</p>
-              
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/private-party.png" alt="Acoustic duo performing live music in Kittery, Maine">
-            </div>
-          </div>
-          <h5 class="card-subtitle mx-2 text-muted month-text">August:</h5>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">1</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://starkbrewingcompany.com/manchester-stark-brewing-company-events" target="_blank">
-              <p class="card-text"><b>Stark Brewing Co.</b></a>
-                <br>Manchester, NH</p>
-              <p class="card-text"><em>6:30-9:30pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/stark.png" alt="Acoustic duo performing live music in Manchester, New Hampshire">
-            </div>
-          </div>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">17</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              
-              <p class="card-text"><b>Blue Bear Inn</b></a>
-                <br>Francestown, NH</p>
-              <p class="card-text"><em>11:00am-2:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/blue-bear.jpg" alt="Acoustic duo performing live music in Manchester, New Hampshire">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">TUE</p>
-              <h1 class="card-text">21</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              
-              <p class="card-text"><b>Corporate Event</b></a>
-                <br>Bedford, NH</p>
-              <p class="card-text"><em>6:00pm-8:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/wen-logo.png" alt="Acoustic duo performing live music in Bedford, NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">24</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.averillhousevineyard.com" target="_blank">
-              <p class="card-text"><b>Averill House Vineyard</b></a>
-                <br>Brookline, NH</p>
-              <p class="card-text"><em>1:30-3:30pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/averill-house.png" alt="Acoustic duo performing live music at wineries in Brookline, NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">THU</p>
-              <h1 class="card-text">28</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.jacquesflowers.com/page/mast-road-community-market" target="_blank" >
-              <p class="card-text"><b>Mast Rd Community Market</b></a>
-                <br>Goffstown, NH</p>
-              <p class="card-text"><em>3:30-6:30pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/mast-road.png" alt="Acoustic duo performing live music farmers markets across NH">
-            </div>
-          </div>
-          <h5 class="card-subtitle mx-2 text-muted month-text">September:</h5>
-          <hr>
-          
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">6</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              
-              <p class="card-text"><b>Manchester North Soccer League</b>
-                <br>Manchester, NH</p>
-              <p class="card-text"><em>9:00am-11:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/soccer.jpg" alt="Acoustic duo performing live music farmers markets across NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">6</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-               <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.bookerymht.com/our-events" target="_blank" >
-              <p class="card-text"><b>Bookery Manchester</b></a>
-                <br>Manchester, NH</p>
-              <p class="card-text"><em>3:00-5:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/bookery.png" alt="Acoustic duo performing live music farmers markets across NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">13</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://palacetheatre.org/manchester-citywide-arts-festival/" target="_blank" >
-              <p class="card-text"><b>Manchester Citywide Arts Festival</b></a>
-                <br>Manchester, NH</p>
-              <p class="card-text"><em>10:00am-5:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/arts-festival.png" alt="Acoustic duo performing live music farmers markets across NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">20</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              
-              <p class="card-text"><b>SHED Fest</b></a>
-                <br>Andover, MA</p>
-              
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/shed-fest.jpg" alt="Acoustic duo performing live music in Sunapee, NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">WED</p>
-              <h1 class="card-text">24</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              
-              <p class="card-text"><b>Corporate Event</b>
-                <br>Vine 32 Wine + Graze Bar
-                <br>Bedford, NH</p>
-              
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/wen-logo.png" alt="Acoustic duo performing live music at wineries across NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">26</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="http://www.sunapeecoffeehouse.org" target="_blank" >
-              <p class="card-text"><b>Sunapee Community CoffeeHouse</b></a>
-                <br>Sunapee, NH</p>
-              <p class="card-text"><em>7:00-9:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/sunapee-cc.png" alt="Acoustic duo performing live music in Sunapee, NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">TUES</p>
-              <h1 class="card-text">30</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.shaskeenirishpub.com/" target="_blank" >
-              <p class="card-text"><b>The Shaskeen Pub</b></a>
-                <br>Manchester, NH</p>
-              <p class="card-text"><em>8:00-11:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/shaskeen-4.png" alt="Acoustic duo performing live music at the Shaskeen in Manchester, NH">
-            </div>
-          </div>
-          <h5 class="card-subtitle mx-2 text-muted month-text">October:</h5>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">4</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              
-              <p class="card-text"><b>Corporate Event</b>
-                <br>Manchester, NH</p>
-              
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/private-party.png" alt="Acoustic duo performing live music at wineries across NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">5</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.averillhousevineyard.com" target="_blank" >
-              <p class="card-text"><b>Averill House Vineyard</b></a>
-                <br>Brookline, NH</p>
-              <p class="card-text"><em>1:30-3:30pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/averill-house.png" alt="Acoustic duo performing live music at wineries across NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SAT</p>
-              <h1 class="card-text">18</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              
-              <p class="card-text"><b>Private Party</b>
-                <br>Manchester, NH</p>
-              
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/private-party.png" alt="Acoustic duo performing live music at wineries across NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">24</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.kettleheadbrewing.com" target="_blank" >
-              <p class="card-text"><b>Kettlehead Brewing Company</b></a>
-                <br>Nashua, NH</p>
-              <p class="card-text"><em>8-10pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/kettlehead2.png" alt="Acoustic duo performing live music at wineries across NH">
-            </div>
-          </div>
-          <h5 class="card-subtitle mx-2 text-muted month-text">November:</h5>
-          <hr>
-          <div class="d-flex" >
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">SUN</p>
-              <h1 class="card-text">2</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              <a class="venue-link link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://kitterycommunitymarket.com" target="_blank" >
-              <p class="card-text"><b>Kittery Community Market</b></a>
-                <br>Kittery, ME</p>
-              <p class="card-text"><em>10:00-1:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/kittery-market.png" alt="Acoustic duo performing live music at farmers' markets across New Hampshire">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">Thursday</p>
-              <h1 class="card-text">13</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              
-              <p class="card-text"><b>Women Entrepeneurs Network</b>
-                <br>Vine 32 | Wine + Graze Bar</p>
-                <br>Bedford, NH</p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/wen-logo.png" alt="Acoustic duo performing live music at wineries across NH">
-            </div>
-          </div>
-          <hr class="events-divider">
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">MON</p>
-              <h1 class="card-text">17</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              
-              <p class="card-text"><b>Corporate Event</b>
-                <br>Derry, NH</p>
-              
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/sapphire.png" alt="Acoustic duo performing live music at wineries across NH">
-            </div>
-          </div>
-  
-
-          <h5 class="card-subtitle mx-2 text-muted month-text">December:</h5>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">THU</p>
-              <h1 class="card-text">11</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              
-              <p class="card-text"><b>Granite State Gather</b>
-                <br>Evolution Bistro & Bar<br>Manchester, NH</p>
-              <p class="card-text"><em>6:00-8:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/evolution.png" alt="Acoustic duo performing live music across New Hampshire">
-            </div>
-            
-          </div>
-          <hr>
-          <div class="d-flex">
-            <div class="d-flex flex-column date-container">
-              <p class="card-text day-of-the-week">FRI</p>
-              <h1 class="card-text">12</h1>
-            </div>  
-            <div class="d-flex flex-column mx-2 event-description">
-              
-              <p class="card-text"><b>Democracy Brewing</b>
-                <br>Boston, MA</p>
-              <p class="card-text"><em>8:00-10:00pm</em></p>
-            </div>
-            <div class="venue-logo-container">
-              <img class="venue-logo shadow-sm" src="images/democracy.png" alt="Acoustic duo performing live music across New Hampshire">
-            </div>
-            
-          </div>
-
- 
-        </div>
-       -->
-        
-        <div class="text-center">
-          <button id="calendar-booking-button" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 60px">
-            Booking
-          </button> 
         </div>
 
-        
-          
-          
-          
-          
+        <div id="categories-container">
+           
+          <div class="category-container">
+            <a href="/weddings">
+              <img class="contact-image" src="images/wedding-1.jpg">
+              <div class="category-overlay"></div>
+            </a>
+            <a href="/weddings">
+              <div class="category-content">
+                  <h4 class="category-title">Weddings</h4>
+                  <p class="category-description">Creating the perfect atmosphere for every chapter of your wedding day</p>
+              </div>
+            </a>
+          </div>  
           
 
+          <div class="category-container">
+            <a href="/corporate-events">
+              <img class="contact-image" src="images/corporate-1.jpg">
+              <div class="category-overlay"></div>
+            </a>
+            <a href="corporate-events">
+              <div class="category-content">
+                  <h4 class="category-title">Corporate Events</h4>
+                  <p class="category-description">Engaging live music that brings energy and connection to your event</p>
+              </div>
+            </a>  
+          </div>
 
+          <div class="category-container">
+            <a href="/private-events">
+              <img class="contact-image" src="images/party-1.jpg">
+              <div class="category-overlay"></div>
+            </a>
+            <a href="private-events">
+              <div class="category-content">
+                <h4 class="category-title">Private Celebrations</h4>
+                <p class="category-description">Elevated live music to celebrate your milestone moment</p>
+              </div>
+            </a>  
+          </div>
 
         </div>
-
+           
       </div>
     </section>
-    
-  
-    <div id="media-section">
-      <div id="media" class="card mx-auto">
-        <div class="card-body text-center">
-          <h1 class="card-title mx-auto" style="padding-bottom: 20px; font-size: 40px;">Live Performances</h1>
-          
-          <p class="card-text">Recorded in front of a live audience at 
-            <a href="https://thestudioportland.com/" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">The Studio Portland</a>
-          </p>
-          <div class="video-container" >
-            <iframe class="youtube-video" 
-            src="https://www.youtube.com/embed/PSzMe6NrSyA?si=MJaCFaY0npu7WQAp" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <div class="video-container" style="padding-top: 20px;">
-            <iframe class="youtube-video" src="https://www.youtube.com/embed/GPqa20-6wXA?si=tFOUO0-UAZKRFAx8" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-           <a href="https://www.youtube.com/@gusandjeanmusic" target="_blank" class="btn btn-outline-dark btn-lg mx-auto" style="width: 200px; border-radius: 5px; margin-top: 40px; margin-bottom: 40px;">More on YouTube</a>
-          
-          <p class="card-text" style="padding-top: 20px;"><b>"Unwritten" - Natasha Bedingfield</b>
-           <br>The Shaskeen Pub - Manchester, NH</p>
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DDNAeMNJQoK/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DDNAeMNJQoK/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DDNAeMNJQoK/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Gus &amp; Jean | Acoustic Duo (@gusandjeanmusic)</a></p></div></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
-<p class="card-text" style="padding-top: 40px;"><b>"Got My Mind Set on You" - George Harrison</b><br>
-Kettlehead Brewing - Nashua, NH</p>
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTh4Ty7DusD/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DTh4Ty7DusD/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DTh4Ty7DusD/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Gus &amp; Jean | Acoustic Duo (@gusandjeanmusic)</a></p></div></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
 
-          <a href="https://www.instagram.com/gusandjeanmusic" target="_blank" class="btn btn-outline-dark btn-lg mx-auto" style="width: 210px; border-radius: 5px; margin-top: 40px; margin-bottom: 10px;">More on Instagram</a>
-          
-  
-                 
-  
-  <!--
-          <p class="card-text">Maren Morris - The Bones
+    <section id="testimonial-section">
+      <div id="testimonials" class=" mx-auto">
+        <div class="card-body text-center">
+          <h1 id="testimonial-heading">Providing the perfect soundtrack</h1>
+          <div id="testimonials-container" class="mx-auto">  
+            <div class="testimonial-card">
             
-          </p>
-          
-            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C9u1R-kRF59/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C9u1R-kRF59/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C9u1R-kRF59/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Gus &amp; Jean (@gusandjeanmusic)</a></p></div></blockquote>
-  <script async src="//www.instagram.com/embed.js"></script>
+            <p class="testimonial-text" style="text-align: left; margin: 10px 10px 20px 10px;">"Gus & Jean were an absolute joy to work with and provided the exact experience I was looking for. 
+                I was so happy to hear the guests say things like, 'It was the perfect addition to the event, 
+                and a bonus I knew every song!'"</p>
+            <p class="testimonial-author">Jonathan V.<br>  Derry, New Hampshire </p>
+            </div>  
             
-          <p class="card-text text-muted" style="padding-top: 10px;">"Late Night Talking" - Harry Styles</p>
-            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C9SVox8uKyB/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C9SVox8uKyB/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C9SVox8uKyB/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Gus &amp; Jean | Acoustic Duo (@gusandjeanmusic)</a></p></div></blockquote>
-  <script async src="//www.instagram.com/embed.js"></script>
-        
-        <a href="https://www.instagram.com/gusandjeanmusic/" target="_blank" class="btn btn-outline-dark btn-lg mx-auto" style="width: 200px; border-radius: 5px; margin-top: 20px">View More</a>
-        
-        <a href="https://www.instagram.com/reel/C9u1R-kRF59/" target="_blank" class="ig-card" style="display: block;
-  border-radius: 16px;
-  overflow: hidden;
-  position: relative;">
-  <img src="images/hero-crop.jpg" style="width: 100%;
-  display: block;"/>
-  <div class="play-button" style="position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
-  color: white;">▶</div>
-</a>
--->
-</div>
-      <!--
-          <h2 class="card-title mx-auto" style="padding-top: 70px; ">Press Photos</h2>
-          <p id="download-picture" class="card-text">Click on a picture to download</p>
-          <div class="mx-auto" >
-            <div class="row"> 
-              <div class="column">
-                <a href="images/14.jpg" download="Gus & Jean - Press Photo">
-                  <img class="photos" src="images/14.jpg" alt="Gus & Jean - Live music acoutic duo in New Hamphsire">
-                </a>
-                <a href="images/15.jpg" download="Gus & Jean - Press Photo">
-                  <img class="photos" src="images/15.jpg" alt="Gus & Jean - Live entertainment for your next party">
-                </a>
-                <a href="images/7.jpg" download="Gus & Jean - Press Photo">
-                  <img class="photos" src="images/7.jpg" alt="Gus & Jean - Musicians to hire for your next event">
-                </a>
-              </div>
-              <div class="column">
-                <a href="images/2.jpg" download="Gus & Jean - Press Photo">
-                  <img class="photos" src="images/2.jpg" alt="Gus & Jean - Live music in southern new hampshire and maine">
-                </a>
-                <a href="images/9.jpg" download="Gus & Jean - Press Photo">
-                  <img class="photos" src="images/9.jpg" alt="Gus & Jean - Live music for patios, breweries, wineries, and events">
-                </a>
-                
-                <a class="photos" href="images/10.jpg" download="Gus & Jean - Press Photo">
-                  <img class="photos" src="images/10.jpg" alt="Gus & Jean - Live entertainment for markets, festivals, and parties">
-                </a>
-                
-              </div>
-              
-              <p class="card-text" style="padding-top: 20px;">Photos by 
-                <a href="https://www.licentco.com/" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Licent Photography</a>
+            <div class="testimonial-card">  
+            <p class="testimonial-text" style="text-align: left; margin: 10px 10px 20px 10px;">"Big shoutout to Gus & Jean for bringing the vibes! Their live set was the perfect soundtrack to a sunny morning of 
+                fresh food, local love, and community connection. 
+                They kept the energy high and the crowd smiling."</p>
+            <p class="testimonial-author">Rob L.<br>North Andover, Massachusetts </p>
+            </div>
+          </div> 
+          <div id="featured-at">  
+            <div class="featured-containers">
+              <h3 class="trusted-by-heading">
+              Trusted by:
+              </h3>
+              <p class="trusted-by-text" >
+              Harpoon Brewery • Palace Theatre • 
+              Marble Ridge Winery •  Blue Bear Inn
+              </p>
+            </div>
+            
+            <div class="featured-containers">
+              <h3 class="featured-in-heading">
+              Featured in:
+              </h3>
+              <p class="featured-in-text" >
+              NH Union Leader • Hippo Press • 
+              Hollis-Brookine News •  Visit Manchester
               </p>
               
-            </div>
-          </div>
-        </div>
-      
-     </div>
-      -->
-    </div>
- 
-  
-    <div id="contact-section">
-      <div id="contact" class="card mx-auto">
-        <div class="card-body text-center">
-          <a href="https://www.instagram.com/gusandjeanmusic/" target="_blank">
-            <div class="text-center">
-              <img id="about-logo" style="padding-top: 0;" src="images/logo-large.png" alt="G&J logo" class="mx-auto" alt="Acoustic duo performing live music across New Hampshire">
             </div>  
-          </a>  
-          <h1 style="font-size: 38px; padding-top: 40px; padding-bottom: 40px;">What People Are Saying:</h1>
-          <!--
-          <h2 class="card-title mx-auto" style=" margin-bottom: 0px; width: 70%;">Available For:</h2>
-          -->
-          
-          
-          <p>Jonathan Vogt<br><a href="https://elevatedeatsnh.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">  Chef/Owner - Elevated Eats</a> </p>
-          <p style="text-align: justify; margin: 10px 10px 20px 10px;">"Gus & Jean were an absolute joy to work with and provided the exact experience I was looking for. 
-              I was so happy to hear the guests say things like, 'It was the perfect addition to the event, 
-              and a bonus I knew every song!' I will definitely be reaching out to them for future events!"</p>
-          <p style="padding-top: 20px;"><a href="https://www.facebook.com/share/p/15a5EAwErZ/" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover " target="_blank">North Andover Farmers Market</a><br>North Andover, MA </p>
-          <p style="text-align: justify; margin: 10px 10px 20px 10px;">"Big shoutout to Gus & Jean for bringing the vibes to the North Andover 
-              Farmers Market this weekend! Their live set was the perfect soundtrack to a sunny morning of 
-              fresh food, local love, and community connection. From toe-tapping covers across the decades, 
-              they kept the energy high and the crowd smiling."</p>
-
-        <h2 class="card-subtitle text-center month-text" style="padding-top: 70px;">Seen on Stage At:</h2>
-        <hr>
-        <div class="venues-container" style="display: flex; gap: 20px;">
-  <div class="venues-column" style="width: 50%; ">
-
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Able Ebenezer Brewing</b><br>Merrimack, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Amphora Restaurant & Bar</b><br>Derry, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Averill House Vineyard</b><br>Brookline, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Blue Bear Inn</b><br>Francestown, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Bookery</b><br>Manchester, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Democracy Brewing</b><br>Boston, MA</p>
-    </div>
-    
-  </div>
-
-  <div class="venues-column" style="width: 50%; ">
-     <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Mast Rd. Community Market</b><br>Goffstown, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>North Andover Farmers Market</b><br>North Andover, MA</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Over the Moon Farmstead</b><br>Pittsfield, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Palace Theatre's Arts Festival</b><br>Manchester, NH</p>
-    </div>
-    
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Palace Theatre's Shop the Block</b><br>Manchester, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Patrick's Pub & Eatery</b><br>Gilford, NH</p>
-    </div>
-  </div>
-</div>
-
-<button id="toggleMoreVenues" class="btn btn-outline-dark btn-sm" style="display: block; margin: 0 auto; margin-top: 20px;">
-  See More &#x25BE;
-</button>
-
-<div id="more-venues" class="venues-container" style="display: none; gap: 20px;">
-  <div class="venues-column" style="width: 50%; ">
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Earth Eagle Brewing</b><br>Portsmouth, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Feathered Friend Brewing</b><br>Concord, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Flannel Tavern</b><br>Chichester, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>The Farm Bar & Grille</b><br>Essex, MA</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>The Greenery</b><br>Milton, NH</p>
-    </div>
-
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Hare of the Dawg Bar & Grill</b><br>Derry, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>The Hop Knot</b><br>Manchester, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Keene Farmer's Market</b><br>Keene, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Kettlehead Brewing Company</b><br>Nashua, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Kittery Community Market</b><br>Kittery, ME</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>The Lazy Lion</b><br>Deerfield, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Luk's Bar and Grill</b><br>Hudson, NH</p>
-    </div>
-    
-    
-    
-    
-
-  </div>
-
-  <div class="venues-column" style="width: 50%; ">
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Reed's North</b><br>Warner, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>River Junction Brewing</b><br>Sanford, ME</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>The Shaskeen Pub & Restaurant</b><br>Manchester, NH</p>
-    </div>
-   <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Shopper's Pub + Eatery</b><br>Manchester, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Stark Brewing Co.</b><br>Manchester, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Stonecutter's Pub</b><br>Milford, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Sunapee CoffeeHouse</b><br>Sunapee, NH</p>
-    </div>
-    
-    
-    
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Vine 32 - Wine + Graze Bar</b><br>Bedford, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>WEN Networking Mixer</b><br>Bedford, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Wild Bevy Distilling</b><br>Wells, ME</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Windham Restaurant</b><br>Windham, NH</p>
-    </div>
-    <div style="text-align: left; padding-bottom: 20px;">
-      <p class="card-text"><b>Zorvino Vineyards</b><br>Sandown, NH</p>
-    </div>
-
-  </div>
-</div>
-        <h1 style="font-size: 38px; padding-top: 80px;">Available For:</h1>
-<div id="booking-container">
-            <div class="booking-column">
-              <div class="contact-containers mx-auto" style="max-width: 350px;">
-                <h4 class="review-heading"><em>Weddings/Receptions</em></h4>
-                <img id="weddings" style="cursor: pointer" class="contact-image" src="images/weddings2.jpg">
-                <p>Photo: <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.jennbakosphoto.com" target="_blank">Jenn Bakos</a></p>
-              </div>
-              <div class="contact-containers mx-auto" style="max-width: 350px;">
-                <h4 class="review-heading"><em>Corporate Events</em></h4>
-                <img id="corporate" style="cursor: pointer" class="contact-image" src="images/union-leader2.jpg">
-                 <p>Photo: <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://jodieea.wixsite.com/andruskevich-photo" target="_blank">Jodie Andruskevich/Union Leader</a></p>
-              </div>
-            </div>
-  
-            <div class="booking-column">
-              <div class="contact-containers mx-auto" style="max-width: 350px;">
-                <h4 class="review-heading"><em>Parties/Gatherings</em></h4>
-                <img id="parties" style="cursor: pointer" class="contact-image" src="images/parties2.jpg">
-                  <p>Photo: <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.instagram.com/laceyjcreativeco/" target="_blank">Lacey J Creative</a></p>
-              </div>
-
-              <div class="contact-containers mx-auto" style="max-width: 350px;">
-                <h4 class="review-heading"><em>Markets/Festivals</em></h4>
-                <img id="markets" style="cursor: pointer" class="contact-image" src="images/markets2.jpg">
-                 <p>Photo: <a  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.northandoverfarmersmarket.org" target="_blank">North Andover Farmers Market</a></p>
-              </div>
-           
-              
-            </div>
-          </div>  
-          <h1 id="booking" class="card-title mx-auto" style="font-size: 40px; padding-top: 80px;">Booking Inquiries</h1>
-
-          <!--
-          <div class="contact-containers">
-            <h2>Breweries, Wineries, and Patios</h2>
-            <img class="contact-image" src="images/receptions.png">
-          </div>
-          <div class="contact-containers">  
-            <h2>Markets and Outdoor Festivals</h2>
-            <img class="contact-image" src="images/festivals.png">
-          </div>
-          -->
-          <p>Contact us at gusandjeanmusic@gmail.com or fill out the form below</p>
-          <form id="contact-form" onsubmit="sendEmail(event)">
-             
-            <input type="email" id="email" class="form-control mb-2" style="border: solid; border-width: thin; border-color: grey;" required placeholder="Email address">
-            <input type="text" id="name" class="form-control mb-2" style="border: solid; border-width: thin; border-color: grey;" required placeholder="Name">
-            <textarea id="message" class="form-control mb-3" rows="4" style="border: solid; border-width: thin; border-color: grey;" required placeholder="Message"></textarea>
-            <button type="submit" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 20px;">Send</button>
-          </form>
-
-          <!-- Hidden div for success message -->
-          <div id="response-message" style="padding: 30px 20px 40px 20px; display: none; background-color:#065B7A; color: white;" class="card">
-            <p>Thank you for your message! We'll get back to you shortly.</p>
-            <img id="response-logo" src="images/logo-large.png" alt="G&J logo" class="mx-auto" style="width: 150px; height: auto;">
-          </div>
             
-            
+          </div> 
+          <!--
+          <p style="margin: 0 auto; color: white;">• Voted Best Local Music Act in NH - 2026 •</p> 
+         -->
+          
+          <div class="text-center">     
+            <a href="/contact" id="about-booking-button" class="btn btn-outline-light btn-lg">Contact us today!</a>
+          </div>
+
         </div>
       </div>
-      
-    </div>
+    </section>  
+    
+    <section id="bottom-section">
+      <div class="bottom-heading">
+        <div>
+          <!--
+          <p class="eyebrow">THE GUS & JEAN EXPERIENCE</p>
+          -->
+          <h2 class="bottom-title">Designing every detail</h2>
+          <p class="bottom-subtitle">Our goal is simple: 
+            <span class="highlight">
+            create an atmosphere that feels seamless, 
+            </span>
+            reflects your vision, and allows you and your guests to focus on making memories.</p>
+        </div>
+      </div>
+      <div class="bottom-description-container">
+        <img class="bottom-description-image" src="/images/corporate-2-cropped.jpg">
+        <div class="bottom-list-container">
+          <p class="bottom-description"> 
+            From planning to performance, we handle every detail with 
+            care so you can focus on enjoying the celebration. </p>
+          <ul class="bottom-list">
+            <li class="bottom-list-item"><span class="check">✓</span>Reliable coordination</li>
+            <li class="bottom-list-item"><span class="check">✓</span>Effortless planning</li>
+            <li class="bottom-list-item"><span class="check">✓</span>Uniquely personalized</li>
+            <li class="bottom-list-item"><span class="check">✓</span>Enhancing every moment</li>
+          </ul>
+        </div>
+        
+      </div>
+      <div id="bottom-section-button" class="text-center">     
+            <a href="/contact" id="about-booking-button" class="btn btn-outline-dark btn-lg">Check your date</a>
+        </div>
+    </section>
+    <section class="last-section">
+      <div class="last-section-container">
+        <div class="weddings-container">
+          <div class="weddings-text-container">
+            <h2 class="weddings-heading">Weddings</h2>
+            <p class="weddings-description" style="font-weight: 600; line-height: 1.3;">Music for every moment you'll remember forever.</p>
+            <p class="weddings-description">From ceremonies and cocktail hours to receptions and rehearsal dinners, we help create a seamless soundtrack for your wedding day.</p>
+            <div>     
+              <a href="/weddings" id="about-booking-button" class="btn btn-outline-dark btn-lg">Learn more</a>
+            </div>
+          </div>
+          
+            <img class="weddings-image" src="images/wedding-1.jpg">
+          
+        </div>
+        <div class="corporate-events-container">
+          <div class="corporate-events-text-container">
+            <h2 class="corporate-events-heading">Corporate Events</h2>
+            <p class="corporate-events-description" style="font-weight: 600; line-height: 1.3;">Professional entertainment that helps bring people together.</p>
+            <p class="corporate-events-description">Whether you're hosting clients, employees, or guests, we provide polished acoustic music that enhances the atmosphere without overwhelming it.</p>
+            <div >     
+              <a href="/corporate-events" id="about-booking-button" class="btn btn-outline-dark btn-lg">Learn more</a>
+            </div>
+          </div>
+          <img class="corporate-events-image" src="images/corporate-1.jpg">
+        </div>
+        <div class="private-events-container">
+          <div class="private-events-text-container">
+            <h2 class="private-events-heading">Personal Celebrations</h2>
+            <p class="private-events-description" style="font-weight: 600; line-height: 1.3;">Because life's best moments deserve more than a playlist.</p>
+            <p class="private-events-description">From anniversaries and birthdays to showers and family gatherings, we create an inviting atmosphere tailored to your celebration.</p>
+            <div>     
+              <a href="/private-events" id="about-booking-button" class="btn btn-outline-dark btn-lg">Learn more</a>
+            </div>
+          </div>
+          
+            <img class="private-events-image" src="images/party-1.jpg">
+        
+        </div>
+      </div>
+      <div class="section-divider">──── ✦ ────</div>
+      <div class="end-call-of-action">
+        <div>
+          <h2 class="private-events-heading">Let's create something memorable</h2>
+          <p class="private-events-description" style="font-weight: 700;">No two events are exactly alike and neither is our approach.</p>
+          <p class="private-events-description">Let us know what you're planning, who you're celebrating with, and the vibe you're looking for, and we'll take care of the rest.</p>
+          <div>     
+            <a href="/contact" id="about-booking-button" class="btn btn-outline-dark btn-lg">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <footer>
-      <div id="footer" class="d-flex flex-column align-items-center">
+      <div id="footer" class="d-flex flex-column " style="padding-top: 40px;">
         
-        <h1 style="padding: 20px 0 20px 0; font-family: Shrikhand; font-size: 2.5rem;">Gus & Jean</h1>
-        <div class="d-flex justify-content-center align-items-center">
-          <a href="https://www.instagram.com/gusandjeanmusic/" target="_blank"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="23" height="23" class="mx-2" viewBox="0 0 1000 1000"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M295.42,6c-53.2,2.51-89.53,11-121.29,23.48-32.87,12.81-60.73,30-88.45,57.82S40.89,143,28.17,175.92c-12.31,31.83-20.65,68.19-23,121.42S2.3,367.68,2.56,503.46,3.42,656.26,6,709.6c2.54,53.19,11,89.51,23.48,121.28,12.83,32.87,30,60.72,57.83,88.45S143,964.09,176,976.83c31.8,12.29,68.17,20.67,121.39,23s70.35,2.87,206.09,2.61,152.83-.86,206.16-3.39S799.1,988,830.88,975.58c32.87-12.86,60.74-30,88.45-57.84S964.1,862,976.81,829.06c12.32-31.8,20.69-68.17,23-121.35,2.33-53.37,2.88-70.41,2.62-206.17s-.87-152.78-3.4-206.1-11-89.53-23.47-121.32c-12.85-32.87-30-60.7-57.82-88.45S862,40.87,829.07,28.19c-31.82-12.31-68.17-20.7-121.39-23S637.33,2.3,501.54,2.56,348.75,3.4,295.42,6m5.84,903.88c-48.75-2.12-75.22-10.22-92.86-17-23.36-9-40-19.88-57.58-37.29s-28.38-34.11-37.5-57.42c-6.85-17.64-15.1-44.08-17.38-92.83-2.48-52.69-3-68.51-3.29-202s.22-149.29,2.53-202c2.08-48.71,10.23-75.21,17-92.84,9-23.39,19.84-40,37.29-57.57s34.1-28.39,57.43-37.51c17.62-6.88,44.06-15.06,92.79-17.38,52.73-2.5,68.53-3,202-3.29s149.31.21,202.06,2.53c48.71,2.12,75.22,10.19,92.83,17,23.37,9,40,19.81,57.57,37.29s28.4,34.07,37.52,57.45c6.89,17.57,15.07,44,17.37,92.76,2.51,52.73,3.08,68.54,3.32,202s-.23,149.31-2.54,202c-2.13,48.75-10.21,75.23-17,92.89-9,23.35-19.85,40-37.31,57.56s-34.09,28.38-57.43,37.5c-17.6,6.87-44.07,15.07-92.76,17.39-52.73,2.48-68.53,3-202.05,3.29s-149.27-.25-202-2.53m407.6-674.61a60,60,0,1,0,59.88-60.1,60,60,0,0,0-59.88,60.1M245.77,503c.28,141.8,115.44,256.49,257.21,256.22S759.52,643.8,759.25,502,643.79,245.48,502,245.76,245.5,361.22,245.77,503m90.06-.18a166.67,166.67,0,1,1,167,166.34,166.65,166.65,0,0,1-167-166.34" transform="translate(-2.5 -2.5)"/></svg>
-          </a>
-  
-          <!--
-          <a href="mailto: gusandjeanmusic@gmail.com" class="link-light">
-          <svg  xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="mx-2 bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
-          </a>
-          -->
-  
-          <a href="https://www.facebook.com/gusandjeanmusic" target="_blank" class="link-light mx-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-            </svg>
-          </a>
-        
-          <a href="https://www.youtube.com/@gusandjeanmusic" target="_blank" class="link-light" style="padding-top: 2px;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="mx-2 bi bi-youtube" viewBox="0 0 16 16">
-              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-            </svg>
-          </a>
-          <a href="https://share.google/dknay0lzaTzPlmV76" target="_blank" class="link-light">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mx-2" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
-              <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
-            </svg>
-          </a>
-        <!--
-          <a href="https://open.spotify.com/artist/4HdZvbA5N2ZFEFBzkJpyqv" target="_blank" class="link-light">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="mx-2 bi bi-spotify" viewBox="0 0 16 16">
-              <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
-            </svg>
-          </a>
-        -->
+        <div style="align-self: center;">
+          <h1 style="padding: 40px 0 0 0; font-family: Shrikhand; font-size: 2.5rem; color: white;">Gus & Jean</h1>
+          <div class="d-flex justify-content-center align-items-center" style="padding-bottom: 0px;">
+            <a href="https://www.instagram.com/gusandjeanmusic/" target="_blank"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="23" height="23" class="mx-2" viewBox="0 0 1000 1000"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M295.42,6c-53.2,2.51-89.53,11-121.29,23.48-32.87,12.81-60.73,30-88.45,57.82S40.89,143,28.17,175.92c-12.31,31.83-20.65,68.19-23,121.42S2.3,367.68,2.56,503.46,3.42,656.26,6,709.6c2.54,53.19,11,89.51,23.48,121.28,12.83,32.87,30,60.72,57.83,88.45S143,964.09,176,976.83c31.8,12.29,68.17,20.67,121.39,23s70.35,2.87,206.09,2.61,152.83-.86,206.16-3.39S799.1,988,830.88,975.58c32.87-12.86,60.74-30,88.45-57.84S964.1,862,976.81,829.06c12.32-31.8,20.69-68.17,23-121.35,2.33-53.37,2.88-70.41,2.62-206.17s-.87-152.78-3.4-206.1-11-89.53-23.47-121.32c-12.85-32.87-30-60.7-57.82-88.45S862,40.87,829.07,28.19c-31.82-12.31-68.17-20.7-121.39-23S637.33,2.3,501.54,2.56,348.75,3.4,295.42,6m5.84,903.88c-48.75-2.12-75.22-10.22-92.86-17-23.36-9-40-19.88-57.58-37.29s-28.38-34.11-37.5-57.42c-6.85-17.64-15.1-44.08-17.38-92.83-2.48-52.69-3-68.51-3.29-202s.22-149.29,2.53-202c2.08-48.71,10.23-75.21,17-92.84,9-23.39,19.84-40,37.29-57.57s34.1-28.39,57.43-37.51c17.62-6.88,44.06-15.06,92.79-17.38,52.73-2.5,68.53-3,202-3.29s149.31.21,202.06,2.53c48.71,2.12,75.22,10.19,92.83,17,23.37,9,40,19.81,57.57,37.29s28.4,34.07,37.52,57.45c6.89,17.57,15.07,44,17.37,92.76,2.51,52.73,3.08,68.54,3.32,202s-.23,149.31-2.54,202c-2.13,48.75-10.21,75.23-17,92.89-9,23.35-19.85,40-37.31,57.56s-34.09,28.38-57.43,37.5c-17.6,6.87-44.07,15.07-92.76,17.39-52.73,2.48-68.53,3-202.05,3.29s-149.27-.25-202-2.53m407.6-674.61a60,60,0,1,0,59.88-60.1,60,60,0,0,0-59.88,60.1M245.77,503c.28,141.8,115.44,256.49,257.21,256.22S759.52,643.8,759.25,502,643.79,245.48,502,245.76,245.5,361.22,245.77,503m90.06-.18a166.67,166.67,0,1,1,167,166.34,166.65,166.65,0,0,1-167-166.34" transform="translate(-2.5 -2.5)"/></svg>
+            </a>
+            <a href="https://www.facebook.com/gusandjeanmusic" target="_blank" class="link-light mx-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@gusandjeanmusic" target="_blank" class="link-light" style="padding-top: 2px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="mx-2 bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+              </svg>
+            </a>
+            <a href="https://share.google/dknay0lzaTzPlmV76" target="_blank" class="link-light">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mx-2" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+              </svg>
+            </a>
+          </div>
+          <p class="link-light link-offset-2 text-center" style="padding-top: 20px; padding-bottom: 20px;">
+            &copy; Copyright <span id="year"></span>. All Rights Reserved.
+          </p>
         </div>
-        
-        <a id="bottom-top-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 20px 0 10px 0; cursor: pointer;">Back to top</a>
-        <a id="bottom-about-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 10px; cursor: pointer;">About</a>
-        <a id="bottom-calendar-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 10px; cursor: pointer;">Schedule</a>
-       
-        <a id="bottom-media-tab" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="padding: 10px 0 20px 0 ; cursor: pointer;">Media</a>
-        
-        
-        <p class="mx-auto" style="align-self: center; margin-bottom: 0; padding-right: 20px;">Join the mailing list:</p>
-        <form style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;" id="mailingList" onsubmit="mailingList(event)">
-          
-          <input type="email" id="mailing-list-email" class="form-control mx-2" style="margin-top: 10px; height: 40px; width: 200px; border: solid; border-width: thin; border-color: grey;" required placeholder="Email address">
-          <button type="submit" class="btn btn-outline-light btn-sm mx-2" style="margin-top: 10px; height: 40px; width: 100px; border-radius: 5px; justify-self: center;">Join</button>
-        </form>  
-        <p class="link-light link-offset-2 text-center" style="padding-top: 40px; padding-bottom: 20px;">
-  &copy; Copyright <span id="year"></span>. All Rights Reserved.
-</p>
-      
       </div>
-      
-  
     </footer>
   
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const button = document.getElementById("togglePastEvents");
-  const pastEvents = document.getElementById("past-events");
-
-  button.addEventListener("click", function () {
-    
-    pastEvents.style.display = "block";
-    this.style.display = "none";
-  });
-});
-
-     document.getElementById("toggleMoreVenues").addEventListener("click", function () {
-  const moreVenues = document.getElementById("more-venues");
-  const isVisible = moreVenues.style.display === "flex";
-
-  moreVenues.style.display = isVisible ? "none" : "flex";
-
-  // Hide the toggle button after it’s clicked
-  this.style.display = "none";
-});
-
-document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "MusicGroup",
-        "name": "Gus & Jean",
-        "description": "Live acoustic duo based in Manchester, NH. Performing at receptions, parties, venues, and events across Southern New Hampshire/Maine and Massachusetts.",
-        "url": "https://www.gusandjean.com",
-        "sameAs": [
-          "https://www.instagram.com/gusandjeanmusic",
-          "https://www.facebook.com/profile.php?id=61568608425486"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": "NH",
-          "addressCountry": "US"
-        }
-      }
-    </script>
   </body>
 </html>
