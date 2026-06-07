@@ -57,6 +57,8 @@ document.querySelectorAll('.dropdown-custom > .nav-link').forEach(link => {
 
 const year = new Date().getFullYear();
 
-document.querySelectorAll(".year").forEach(element => {
-  element.textContent = year;
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".year").forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
 });
