@@ -1,3 +1,5 @@
+
+// Sends the email
 window.onload = function () {
 
   emailjs.init("Abm0b8RIpGS0ezhMr");
@@ -7,6 +9,7 @@ window.onload = function () {
     .addEventListener("submit", sendEmail);
 };
 
+// Information from the contact form
 function sendEmail(event) {
 
   event.preventDefault();
@@ -46,6 +49,7 @@ function sendEmail(event) {
     });
 }
 
+// Nav display for events
 document.querySelectorAll('.dropdown-custom > .nav-link').forEach(link => {
   link.addEventListener('click', function(e) {
     if (window.innerWidth < 768) {
@@ -55,10 +59,25 @@ document.querySelectorAll('.dropdown-custom > .nav-link').forEach(link => {
   });
 });
 
+
+// Gets current year for Copyright in footer
 const year = new Date().getFullYear();
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".year").forEach(el => {
     el.textContent = new Date().getFullYear();
+  });
+});
+
+
+// calendar full schedule button
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.getElementById("togglePastEvents");
+  const pastEvents = document.getElementById("past-events");
+
+  button.addEventListener("click", function () {
+    
+    pastEvents.style.display = "block";
+    this.style.display = "none";
   });
 });
