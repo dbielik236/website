@@ -1292,7 +1292,7 @@ position: relative;
   );
 }
 
-@media (max-width: 768px) {
+@media (max-width: 986px) {
     .music-section {
         padding: 20px;
     }
@@ -1305,7 +1305,7 @@ position: relative;
     
 }
 
-@media (max-width: 768px) {
+@media (max-width: 986px) {
     .youtube-container {
         flex-direction: column;
         align-items: center;
@@ -1317,7 +1317,7 @@ position: relative;
     width: 50%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 986px) {
     .youtube-video {
         width: 100%;
     }
@@ -1393,7 +1393,7 @@ position: relative;
   color: rgba(255,255,255,.55);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 986px) {
 
   .music-library-card {
     
@@ -1419,7 +1419,7 @@ position: relative;
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 986px) {
 
   .music-library-card {
     padding: 1.5rem;
@@ -1443,3 +1443,14 @@ position: relative;
   }
 
 }
+
+.music-image {
+  width: 30%;
+}
+
+@media (max-width: 986px) {
+  .music-image {
+    width: 100%;
+  }
+
+}  
