@@ -176,6 +176,7 @@ img {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.55);
+    
 }
 
 /* ===== TEXT CONTENT ===== */
@@ -193,6 +194,9 @@ img {
     max-width: 900px;
 
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* ===== MAIN TITLE ===== */
@@ -232,6 +236,9 @@ img {
     .about-acoustic-duo {
         font-size: 1rem;
         line-height: 1.5;
+        width: 250px;
+        text-align: center;
+        
     }
 
 }
@@ -350,7 +357,7 @@ iframe {
 
 #featured-at {
 
-    padding-top: 80px; 
+    padding-top: 40px; 
     display: flex; 
     gap: 40px;
     justify-content: center;
@@ -758,7 +765,7 @@ footer {
   );
 
 position: relative; 
-    padding: 80px;
+    padding: 40px 80px 40px 80px;
 }
 
 @media (max-width: 992px) {
@@ -880,7 +887,7 @@ position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0 40px 0;
+    padding: 60px 0 20px 0;
 }
 
 @media (max-width: 992px) {
@@ -1051,6 +1058,7 @@ position: relative;
   .calendar-row {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 }
 
@@ -1088,6 +1096,7 @@ position: relative;
 @media (max-width: 979px) {
   .calendar-column {
     width: 100%;
+    background-color: white;
   }
 }
 
@@ -1300,6 +1309,7 @@ position: relative;
     .youtube-container {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 }
 
@@ -1388,7 +1398,8 @@ position: relative;
   .music-library-card {
     
     border-radius: 12px;
-
+    background-color: white;
+   
   }
 
   .music-library-row {
