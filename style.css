@@ -795,13 +795,14 @@ position: relative;
     display: flex;
     flex-direction: row-reverse;
     gap: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .private-events-container {
     display: flex;
     flex-direction: row-reverse;
     gap: 40px;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -816,6 +817,7 @@ position: relative;
 .corporate-events-container {
     display: flex;
     gap: 40px;
+    margin-top: 80px;
     margin-bottom: 80px;
     
 }
@@ -1301,8 +1303,6 @@ position: relative;
   transform: rotate(9deg) translateY(-6px);
 }
 
-
-
 @media (max-width: 768px) {
 
   .photo-stack {
@@ -1316,8 +1316,6 @@ position: relative;
     max-width: min(85vw, 320px);
     
   }
-
- 
 
   .photo-1,
   .photo-2,
