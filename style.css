@@ -1080,6 +1080,12 @@ position: relative;
     padding-top: 40px;
 }
 
+@media (max-width: 979px) {
+  .contact-form-container {
+    max-width: 500px;
+  }
+}
+
 .calendar-section {
      background: linear-gradient(
   180deg,
