@@ -1628,3 +1628,63 @@ position: relative;
    }
 
 } 
+
+
+
+
+.credibility-section {
+    padding: 80px 20px;
+    
+    text-align: center;
+}
+
+.credibility-award {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #222;
+    max-width: 700px;
+    margin: 0 auto 12px;
+    line-height: 1.3;
+}
+
+.credibility-source {
+    color: #777;
+    font-size: 1rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.credibility-grid {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.credibility-card {
+    background: white;
+    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+    padding: 32px;
+    width: 340px;
+    transition: .25s ease;
+}
+
+.credibility-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.credibility-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 18px;
+}
+
+.credibility-card p {
+    color: #666;
+    line-height: 1.9;
+    margin: 0;
+}
