@@ -1633,13 +1633,13 @@ position: relative;
 
 
 .credibility-section {
-    padding: 80px 20px;
+    padding: 80px 20px 0 20px;
     
     text-align: center;
 }
 
 .credibility-award {
-    font-size: 2rem;
+     font-size: 38px !important;
     font-weight: 600;
     color: #222;
     max-width: 700px;
@@ -1687,4 +1687,22 @@ position: relative;
     color: #666;
     line-height: 1.9;
     margin: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .YGAF-testimonial-card {
+
+      width: 60% !important;
+      align-self: center;
+    }
+}
+
+@media (max-width: 475px) {
+    .YGAF-testimonial-card {
+
+      width: 100% !important;
+      align-self: center;
+    }
 }
