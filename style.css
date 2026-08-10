@@ -1649,11 +1649,12 @@ position: relative;
 
 .credibility-source {
     color: #777;
-    font-size: 1rem;
+    
     letter-spacing: .05em;
     text-transform: uppercase;
     margin-bottom: 60px;
 }
+
 
 .credibility-grid {
     display: flex;
@@ -1663,17 +1664,19 @@ position: relative;
 }
 
 .credibility-card {
-    background: white;
+   
     border: 1px solid #e8e8e8;
     border-radius: 14px;
     padding: 32px;
     width: 340px;
     transition: .25s ease;
+    background: rgba(255,255,255,0.8);
 }
 
 .credibility-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    background: rgba(255,255,255,1);
 }
 
 .credibility-card h3 {
@@ -1681,15 +1684,33 @@ position: relative;
     font-weight: 600;
     color: #222;
     margin-bottom: 18px;
+    
 }
 
 .credibility-card p {
     color: #666;
     line-height: 1.9;
     margin: 0;
+    
 }
 
+@media (max-width: 768px) {
+  .testimonials-container-container {
+    flex-direction: column;
+  }
+}
 
+@media (max-width: 935px) {
+  .YGAF-testimonial-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 935px) {
+  .YGAF-testimonial-card {
+    width: 100% !important;
+  }
+}
 
 @media (max-width: 768px) {
     .YGAF-testimonial-card {
@@ -1705,4 +1726,21 @@ position: relative;
       width: 100% !important;
       align-self: center;
     }
+}
+
+.ygaf-list-item {
+  width: 90% !important;
+  background: rgba(255,255,255,0.6);
+  line-height: 1.3;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .ygaf-list-item {
+    width: 100% !important;
+  }
+}
+
+.ygaf-list-item:hover {
+  background-color: white;
 }
