@@ -84,7 +84,7 @@
               </li>
               -->
               <li class="nav-item">
-                <a href="/contact" id="booking-tab" class="nav-link">Contact/Booking</a>
+                <a href="#ygaf-booking" id="booking-tab" class="nav-link">Contact/Booking</a>
               </li>
               <li class="nav-item">
                 <a href="/" id="booking-tab" class="nav-link">Gus & Jean Main Site</a>
@@ -237,9 +237,30 @@
       
 
 
-    <div class="text-center" style="margin-bottom: 20px;">     
-            <a href="/contact" id="about-booking-button" class="btn btn-outline-dark btn-lg" style="margin-top: 30px;">Contact us</a>
+    <div class="contact-form-container" id="ygaf-booking" style="padding-top: 100px;">
+      <h2 class="weddings-heading" style="max-width: 300px; padding-bottom: 20px; font-size: 32px;">Booking inquiries:</h2> 
+        <div class="card-body text-center">
+           
+          
+          <form id="YGAF-form" >
+            <input type="email" id="ygaf-email" class="form-control mb-2" style="border: solid; border-width: thin; border-color: grey;" required placeholder="* Email address">
+            <input type="text" id="ygaf-name" class="form-control mb-2" style="border: solid; border-width: thin; border-color: grey;" required placeholder="* Name ">
+            <input type="text" id="ygaf-org" class="form-control mb-2" style="border: solid; border-width: thin; border-color: grey;" required placeholder="* Organization">
+            <input type="text" id="ygaf-location" class="form-control mb-2" style="border: solid; border-width: thin; border-color: grey;" required placeholder="* City, State">
+            
+            <textarea id="ygaf-message" class="form-control mb-3" rows="4" style="border: solid; border-width: thin; border-color: grey;" required placeholder="* Message"></textarea>
+            <button type="submit" class="btn btn-outline-dark btn-lg" style="width: 200px; border-radius: 5px; margin-top: 20px; margin-bottom: 40px;">Send</button>
+          </form>
+
+          <!-- Hidden div for success message -->
+          <div id="ygaf-response-message" style="padding: 30px 20px 40px 20px; display: none; background-color: transparent;">
+            
+            <img id="response-logo" src="../images/logo-large.png" alt="G&J logo" class="mx-auto" style="width: 150px; height: auto;">
+            <p style="padding-top: 40px; max-width: 500px; margin: 0 auto">You're inquiry is on its way! We'll get back to you within 48 hours.</p>
           </div>
+        </div>
+      </div>
+    </div>  
     </section>
     
     <footer>
